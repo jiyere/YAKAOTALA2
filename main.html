@@ -18,7 +18,7 @@
 
  
    
-<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="http://www.yakaotala.com/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-<script src="func.js" type="text/javascript"></script>
+
 
 
  
@@ -44,7 +44,35 @@
 
 
 
+<style>
 
+.loader{
+	background: url('images/ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+	cursor: wait;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+	.loader h1{
+		background: none;
+		border: none;
+		color: #458976;
+		font-size: 22px;
+		font-family: "Open Sans",sans-serif;
+		font-variant: small-caps;
+		font-weight: 700;
+		height: 700px;
+		line-height: 700px;
+		margin: 0 0 10px;
+		padding: 0;
+		text-align: center;
+	}
+
+
+</style>
 
 
 
@@ -54,6 +82,11 @@
 
 
 
+
+
+
+<div class="loader"><h1>Veuillez patientez pendant le chargement de la page.</h1></div>
+<script>jQuery(window).load(function(){ jQuery(".loader").fadeOut("200"); });</script>
 
 
 
@@ -99,7 +132,7 @@
   
   <table width="500" border="0" align="center">
   <tr>
-    <td > <img src="images/fond-accueil.fw.png" width="669" height="74" alt="fond"></td><p>
+    <td > <img src="http://www.yakaotala.com/images/fond-accueil.fw.png" width="669" height="74" alt="fond"></td><p>
     
     
   </tr>
@@ -255,7 +288,7 @@
 <div id="cont_OTg3NTJ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTg3NTJ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx">
 <a id="a_OTg3NTJ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/republique-democratique-du-congo/kinshasa_v98752/" 
 rel="nofollow" target="_blank" style="color:#333;text-decoration:none;">Météo Kinshasa</a> </div><script type="text/javascript"
- src="http://widget.meteocity.com/js/OTg3NTJ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div><p><p>
+ src="meteo.js"></script></div><p><p>
  
  OU une autre référence 
  <p><p>
@@ -292,7 +325,7 @@ rel="nofollow" target="_blank" style="color:#333;text-decoration:none;">Météo 
     
    <p><table width="500" border="0" align="center">
   <tr>
-    <td><img src="images/fond-accueil.fw.png" width="669" height="74" alt="fond"></td>
+    <td><img src="http://www.yakaotala.com/images/fond-accueil.fw.png" width="669" height="74" alt="fond"></td>
   </tr>
 </table>
 
@@ -357,32 +390,13 @@ rel="nofollow" target="_blank" style="color:#333;text-decoration:none;">Météo 
 	</div>
 	<div data-role="content">
     
-    Votre annonce sera active dans 3 heures
+    Envoyez votre annonce par mail sur annonce@yakaotala.com, en y insérant votre nom, votre photo(facultative), votre message. 
+    Votre annonce sera active dans 2 heures.
+    
 
-<form action="annonce.php" method="post" name="form1" id="form1">
-  <table align="center">
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Nom:</td>
-      <td><input type="text" name="nom" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Email:</td>
-      <td><input type="text" name="email2" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right" valign="top">Message:</td>
-      <td><textarea name="message" cols="50" rows="5"></textarea></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">&nbsp;</td>
-      <td><input type="submit" value="Enregistrer" /></td>
-    </tr>
-  </table>
-  <input type="hidden" name="id" value="" />
-  <input type="hidden" name="MM_insert" value="form1" />
-</form>
 
-<p>
+
+      <p>
 <p>
 <table width="535" border="0">
   <tr>
@@ -601,10 +615,9 @@ Serge Kayembe, le promoteur du Fiet répond aux questions de Kaki Akiewa.<p><p><
 	</div>
 	<div data-role="content">
 
+    <img src="
 
-
-
-</div>
+http://www.yakaotala.com/images/offer_emploi.fw.png" width="382" height="400" alt="offre"> </div>
 	<div data-role="footer">
 		<h4>Copyright Yakaotala(2015) </h4>
 	</div>
@@ -1055,287 +1068,13 @@ Nous mettons a disposition aux utilisateurs de l'application yakaotala des sms g
 Vous avez la possibilité d'agrandir votre package  sms en souscrivant a la version premium  de l'application avec un reporting professionnel.
 <p><p> 
 
-Enregistrez-vous ou soit envoyer par mail admin@yakaotala.com les informations associées aux champs de formulaire. 
+Enregistrez-vous par mail admin@yakaotala.com en envoyant votre nom, prenom, télephone, email, ville et pays. 
 <p>
 
 
 
 
 
-<form method="post" name="form1" action="inscription_sms.php">
-
-
-  <table align="center">
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Nom:</td>
-      <td><input type="text" name="nom" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Prenom:</td>
-      <td><input type="text" name="prenom" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Email:</td>
-      <td><input type="text" name="email" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Telephone:</td>
-      <td><input type="text" name="telephone" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Ville:</td>
-      <td><input type="text" name="ville2" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Pays:</td>
-      <td><select name="pays2">
-        <option value="Afghanistan">Afghanistan </option>
-          <option value="Afrique_Centrale">Afrique_Centrale </option>
-          <option value="Afrique_du_sud">Afrique_du_Sud </option> 
-          <option value="Albanie">Albanie </option>
-          <option value="Algerie">Algerie </option>
-          <option value="Allemagne">Allemagne </option>
-          <option value="Andorre">Andorre </option>
-          <option value="Angola">Angola </option>
-          <option value="Anguilla">Anguilla </option>
-          <option value="Arabie_Saoudite">Arabie_Saoudite </option>
-          <option value="Argentine">Argentine </option>
-          <option value="Armenie">Armenie </option> 
-          <option value="Australie">Australie </option>
-          <option value="Autriche">Autriche </option>
-          <option value="Azerbaidjan">Azerbaidjan </option>
-          <option value="Bahamas">Bahamas </option>
-          <option value="Bangladesh">Bangladesh </option>
-          <option value="Barbade">Barbade </option>
-          <option value="Bahrein">Bahrein </option>
-          <option value="Belgique">Belgique </option>
-          <option value="Belize">Belize </option>
-          <option value="Benin">Benin </option>
-          <option value="Bermudes">Bermudes </option>
-          <option value="Bielorussie">Bielorussie </option>
-          <option value="Bolivie">Bolivie </option>
-          <option value="Botswana">Botswana </option>
-          <option value="Bhoutan">Bhoutan </option>
-          <option value="Boznie_Herzegovine">Boznie_Herzegovine </option>
-          <option value="Bresil">Bresil </option>
-          <option value="Brunei">Brunei </option>
-          <option value="Bulgarie">Bulgarie </option>
-          <option value="Burkina_Faso">Burkina_Faso </option>
-          <option value="Burundi">Burundi </option>
-          <option value="Caiman">Caiman </option>
-          <option value="Cambodge">Cambodge </option>
-          <option value="Cameroun">Cameroun </option>
-          <option value="Canada">Canada </option>
-          <option value="Canaries">Canaries </option>
-          <option value="Cap_vert">Cap_Vert </option>
-          <option value="Chili">Chili </option>
-          <option value="Chine">Chine </option> 
-          <option value="Chypre">Chypre </option> 
-          <option value="Colombie">Colombie </option>
-          <option value="Comores">Colombie </option>
-          <option value="Congo">Congo </option>
-          <option value="Congo_democratique">Congo_democratique </option>
-          <option value="Cook">Cook </option>
-          <option value="Coree_du_Nord">Coree_du_Nord </option>
-          <option value="Coree_du_Sud">Coree_du_Sud </option>
-          <option value="Costa_Rica">Costa_Rica </option>
-          <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
-          <option value="Croatie">Croatie </option>
-          <option value="Cuba">Cuba </option>
-          <option value="Danemark">Danemark </option>
-          <option value="Djibouti">Djibouti </option>
-          <option value="Dominique">Dominique </option>
-          <option value="Egypte">Egypte </option> 
-          <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
-          <option value="Equateur">Equateur </option>
-          <option value="Erythree">Erythree </option>
-          <option value="Espagne">Espagne </option>
-          <option value="Estonie">Estonie </option>
-          <option value="Etats_Unis">Etats_Unis </option>
-          <option value="Ethiopie">Ethiopie </option>
-          <option value="Falkland">Falkland </option>
-          <option value="Feroe">Feroe </option>
-          <option value="Fidji">Fidji </option>
-          <option value="Finlande">Finlande </option>
-          <option value="France">France </option>
-          <option value="Gabon">Gabon </option>
-          <option value="Gambie">Gambie </option>
-          <option value="Georgie">Georgie </option>
-          <option value="Ghana">Ghana </option>
-          <option value="Gibraltar">Gibraltar </option>
-          <option value="Grece">Grece </option>
-          <option value="Grenade">Grenade </option>
-          <option value="Groenland">Groenland </option>
-          <option value="Guadeloupe">Guadeloupe </option>
-          <option value="Guam">Guam </option>
-          <option value="Guatemala">Guatemala</option>
-          <option value="Guernesey">Guernesey </option>
-          <option value="Guinee">Guinee </option>
-          <option value="Guinee_Bissau">Guinee_Bissau </option>
-          <option value="Guinee equatoriale">Guinee_Equatoriale </option>
-          <option value="Guyana">Guyana </option>
-          <option value="Guyane_Francaise ">Guyane_Francaise </option>
-          <option value="Haiti">Haiti </option>
-          <option value="Hawaii">Hawaii </option> 
-          <option value="Honduras">Honduras </option>
-          <option value="Hong_Kong">Hong_Kong </option>
-          <option value="Hongrie">Hongrie </option>
-          <option value="Inde">Inde </option>
-          <option value="Indonesie">Indonesie </option>
-          <option value="Iran">Iran </option>
-          <option value="Iraq">Iraq </option>
-          <option value="Irlande">Irlande </option>
-          <option value="Islande">Islande </option>
-          <option value="Israel">Israel </option>
-          <option value="Italie">italie </option>
-          <option value="Jamaique">Jamaique </option>
-          <option value="Jan Mayen">Jan Mayen </option>
-          <option value="Japon">Japon </option>
-          <option value="Jersey">Jersey </option>
-          <option value="Jordanie">Jordanie </option>
-          <option value="Kazakhstan">Kazakhstan </option>
-          <option value="Kenya">Kenya </option>
-          <option value="Kirghizstan">Kirghizistan </option>
-          <option value="Kiribati">Kiribati </option>
-          <option value="Koweit">Koweit </option>
-          <option value="Laos">Laos </option>
-          <option value="Lesotho">Lesotho </option>
-          <option value="Lettonie">Lettonie </option>
-          <option value="Liban">Liban </option>
-          <option value="Liberia">Liberia </option>
-          <option value="Liechtenstein">Liechtenstein </option>
-          <option value="Lituanie">Lituanie </option> 
-          <option value="Luxembourg">Luxembourg </option>
-          <option value="Lybie">Lybie </option>
-          <option value="Macao">Macao </option>
-          <option value="Macedoine">Macedoine </option>
-          <option value="Madagascar">Madagascar </option>
-          <option value="Madère">Madère </option>
-          <option value="Malaisie">Malaisie </option>
-          <option value="Malawi">Malawi </option>
-          <option value="Maldives">Maldives </option>
-          <option value="Mali">Mali </option>
-          <option value="Malte">Malte </option>
-          <option value="Man">Man </option>
-          <option value="Mariannes du Nord">Mariannes du Nord </option>
-          <option value="Maroc">Maroc </option>
-          <option value="Marshall">Marshall </option>
-          <option value="Martinique">Martinique </option>
-          <option value="Maurice">Maurice </option>
-          <option value="Mauritanie">Mauritanie </option>
-          <option value="Mayotte">Mayotte </option>
-          <option value="Mexique">Mexique </option>
-          <option value="Micronesie">Micronesie </option>
-          <option value="Midway">Midway </option>
-          <option value="Moldavie">Moldavie </option>
-          <option value="Monaco">Monaco </option>
-          <option value="Mongolie">Mongolie </option>
-          <option value="Montserrat">Montserrat </option>
-          <option value="Mozambique">Mozambique </option>
-          <option value="Namibie">Namibie </option>
-          <option value="Nauru">Nauru </option>
-          <option value="Nepal">Nepal </option>
-          <option value="Nicaragua">Nicaragua </option>
-          <option value="Niger">Niger </option>
-          <option value="Nigeria">Nigeria </option>
-          <option value="Niue">Niue </option>
-          <option value="Norfolk">Norfolk </option>
-          <option value="Norvege">Norvege </option>
-          <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
-          <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-          <option value="Oman">Oman </option>
-          <option value="Ouganda">Ouganda </option>
-          <option value="Ouzbekistan">Ouzbekistan </option>
-          <option value="Pakistan">Pakistan </option>
-          <option value="Palau">Palau </option>
-          <option value="Palestine">Palestine </option>
-          <option value="Panama">Panama </option>
-          <option value="Papouasie_Nouvelle_Guinee">Papouasie_Nouvelle_Guinee </option>
-          <option value="Paraguay">Paraguay </option>
-          <option value="Pays_Bas">Pays_Bas </option>
-          <option value="Perou">Perou </option>
-          <option value="Philippines">Philippines </option> 
-          <option value="Pologne">Pologne </option>
-          <option value="Polynesie">Polynesie </option>
-          <option value="Porto_Rico">Porto_Rico </option>
-          <option value="Portugal">Portugal </option>
-          <option value="Qatar">Qatar </option>
-          <option value="Republique_Dominicaine">Republique_Dominicaine </option>
-          <option value="Republique_Tcheque">Republique_Tcheque </option>
-          <option value="Reunion">Reunion </option>
-          <option value="Roumanie">Roumanie </option>
-          <option value="Royaume_Uni">Royaume_Uni </option>
-          <option value="Russie">Russie </option>
-          <option value="Rwanda">Rwanda </option>
-          <option value="Sahara Occidental">Sahara Occidental </option>
-          <option value="Sainte_Lucie">Sainte_Lucie </option>
-          <option value="Saint_Marin">Saint_Marin </option>
-          <option value="Salomon">Salomon </option>
-          <option value="Salvador">Salvador </option>
-          <option value="Samoa_Occidentales">Samoa_Occidentales</option>
-          <option value="Samoa_Americaine">Samoa_Americaine </option>
-          <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-          <option value="Senegal">Senegal </option> 
-          <option value="Seychelles">Seychelles </option>
-          <option value="Sierra Leone">Sierra Leone </option>
-          <option value="Singapour">Singapour </option>
-          <option value="Slovaquie">Slovaquie </option>
-          <option value="Slovenie">Slovenie</option>
-          <option value="Somalie">Somalie </option>
-          <option value="Soudan">Soudan </option> 
-          <option value="Sri_Lanka">Sri_Lanka </option> 
-          <option value="Suede">Suede </option>
-          <option value="Suisse">Suisse </option>
-          <option value="Surinam">Surinam </option>
-          <option value="Swaziland">Swaziland </option>
-          <option value="Syrie">Syrie </option>
-          <option value="Tadjikistan">Tadjikistan </option>
-          <option value="Taiwan">Taiwan </option>
-          <option value="Tonga">Tonga </option>
-          <option value="Tanzanie">Tanzanie </option>
-          <option value="Tchad">Tchad </option>
-          <option value="Thailande">Thailande </option>
-          <option value="Tibet">Tibet </option>
-          <option value="Timor_Oriental">Timor_Oriental </option>
-          <option value="Togo">Togo </option> 
-          <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
-          <option value="Tristan da cunha">Tristan de cuncha </option>
-          <option value="Tunisie">Tunisie </option>
-          <option value="Turkmenistan">Turmenistan </option> 
-          <option value="Turquie">Turquie </option>
-          <option value="Ukraine">Ukraine </option>
-          <option value="Uruguay">Uruguay </option>
-          <option value="Vanuatu">Vanuatu </option>
-          <option value="Vatican">Vatican </option>
-          <option value="Venezuela">Venezuela </option>
-          <option value="Vierges_Americaines">Vierges_Americaines </option>
-          <option value="Vierges_Britanniques">Vierges_Britanniques </option>
-          <option value="Vietnam">Vietnam </option>
-          <option value="Wake">Wake </option>
-          <option value="Wallis et Futuma">Wallis et Futuma </option>
-          <option value="Yemen">Yemen </option>
-          <option value="Yougoslavie">Yougoslavie </option>
-          <option value="Zambie">Zambie </option>
-          <option value="Zimbabwe">Zimbabwe </option>
-        </select></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">&nbsp;</td>
-      <td><input type="submit" value="Enregistrer" /></td>
-    </tr>
-  </table>
-  <input type="hidden" name="id" value="" />
-  <input type="hidden" name="MM_insert" value="form1" />
-
-
-
-
-
-
-
-
-
-</form>
 
 </ul>   
     
@@ -1387,7 +1126,7 @@ Enregistrez-vous ou soit envoyer par mail admin@yakaotala.com les informations a
 </script>
 
 
-        <div id="map_canvas" style="width:500px; height:400px; margin-left:80px;" ></div>
+        <div id="map_canvas" style="width:400px; height:350px; margin-left:80px;" ></div>
         <button onclick="displayMap()">Show Map</button>
 
         
@@ -1415,303 +1154,11 @@ Enregistrez-vous ou soit envoyer par mail admin@yakaotala.com les informations a
   <div data-role="content">	
 		
        
- Vous avez la possibilité de nous envoyer un mail a notre adresse officielle ou soit remplir le formulaire.<p>Email:admin@yakaotala.com<p><p>
-<form method="post" name="form1" action="recuperation.php">
-  <table align="center">
-    <tr valign="baseline">
-      <td nowrap align="right">Nom:</td>
-      <td><input type="text" name="nom" value="" size="32"></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right">Prenom:</td>
-      <td><input type="text" name="prenom" value="" size="32"></td>
-    </tr>
-    
-    <tr valign="baseline">
-      <td nowrap align="right">Telephone:</td>
-      <td><input type="text" name="telephone" value="" size="32"></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right">Email:</td>
-      <td><input type="text" name="email" value="" size="32"></td>
-    </tr>
-    
-    <tr valign="baseline">
-      <td nowrap align="right">Pays:</td>
-      <td><select name="pays">
-          <option value="Afghanistan">Afghanistan </option>
-          <option value="Afrique_Centrale">Afrique_Centrale </option>
-          <option value="Afrique_du_sud">Afrique_du_Sud </option> 
-          <option value="Albanie">Albanie </option>
-          <option value="Algerie">Algerie </option>
-          <option value="Allemagne">Allemagne </option>
-          <option value="Andorre">Andorre </option>
-          <option value="Angola">Angola </option>
-          <option value="Anguilla">Anguilla </option>
-          <option value="Arabie_Saoudite">Arabie_Saoudite </option>
-          <option value="Argentine">Argentine </option>
-          <option value="Armenie">Armenie </option> 
-          <option value="Australie">Australie </option>
-          <option value="Autriche">Autriche </option>
-          <option value="Azerbaidjan">Azerbaidjan </option>
-          <option value="Bahamas">Bahamas </option>
-          <option value="Bangladesh">Bangladesh </option>
-          <option value="Barbade">Barbade </option>
-          <option value="Bahrein">Bahrein </option>
-          <option value="Belgique">Belgique </option>
-          <option value="Belize">Belize </option>
-          <option value="Benin">Benin </option>
-          <option value="Bermudes">Bermudes </option>
-          <option value="Bielorussie">Bielorussie </option>
-          <option value="Bolivie">Bolivie </option>
-          <option value="Botswana">Botswana </option>
-          <option value="Bhoutan">Bhoutan </option>
-          <option value="Boznie_Herzegovine">Boznie_Herzegovine </option>
-          <option value="Bresil">Bresil </option>
-          <option value="Brunei">Brunei </option>
-          <option value="Bulgarie">Bulgarie </option>
-          <option value="Burkina_Faso">Burkina_Faso </option>
-          <option value="Burundi">Burundi </option>
-          <option value="Caiman">Caiman </option>
-          <option value="Cambodge">Cambodge </option>
-          <option value="Cameroun">Cameroun </option>
-          <option value="Canada">Canada </option>
-          <option value="Canaries">Canaries </option>
-          <option value="Cap_vert">Cap_Vert </option>
-          <option value="Chili">Chili </option>
-          <option value="Chine">Chine </option> 
-          <option value="Chypre">Chypre </option> 
-          <option value="Colombie">Colombie </option>
-          <option value="Comores">Colombie </option>
-          <option value="Congo">Congo </option>
-          <option value="Congo_democratique">Congo_democratique </option>
-          <option value="Cook">Cook </option>
-          <option value="Coree_du_Nord">Coree_du_Nord </option>
-          <option value="Coree_du_Sud">Coree_du_Sud </option>
-          <option value="Costa_Rica">Costa_Rica </option>
-          <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
-          <option value="Croatie">Croatie </option>
-          <option value="Cuba">Cuba </option>
-          <option value="Danemark">Danemark </option>
-          <option value="Djibouti">Djibouti </option>
-          <option value="Dominique">Dominique </option>
-          <option value="Egypte">Egypte </option> 
-          <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
-          <option value="Equateur">Equateur </option>
-          <option value="Erythree">Erythree </option>
-          <option value="Espagne">Espagne </option>
-          <option value="Estonie">Estonie </option>
-          <option value="Etats_Unis">Etats_Unis </option>
-          <option value="Ethiopie">Ethiopie </option>
-          <option value="Falkland">Falkland </option>
-          <option value="Feroe">Feroe </option>
-          <option value="Fidji">Fidji </option>
-          <option value="Finlande">Finlande </option>
-          <option value="France">France </option>
-          <option value="Gabon">Gabon </option>
-          <option value="Gambie">Gambie </option>
-          <option value="Georgie">Georgie </option>
-          <option value="Ghana">Ghana </option>
-          <option value="Gibraltar">Gibraltar </option>
-          <option value="Grece">Grece </option>
-          <option value="Grenade">Grenade </option>
-          <option value="Groenland">Groenland </option>
-          <option value="Guadeloupe">Guadeloupe </option>
-          <option value="Guam">Guam </option>
-          <option value="Guatemala">Guatemala</option>
-          <option value="Guernesey">Guernesey </option>
-          <option value="Guinee">Guinee </option>
-          <option value="Guinee_Bissau">Guinee_Bissau </option>
-          <option value="Guinee equatoriale">Guinee_Equatoriale </option>
-          <option value="Guyana">Guyana </option>
-          <option value="Guyane_Francaise ">Guyane_Francaise </option>
-          <option value="Haiti">Haiti </option>
-          <option value="Hawaii">Hawaii </option> 
-          <option value="Honduras">Honduras </option>
-          <option value="Hong_Kong">Hong_Kong </option>
-          <option value="Hongrie">Hongrie </option>
-          <option value="Inde">Inde </option>
-          <option value="Indonesie">Indonesie </option>
-          <option value="Iran">Iran </option>
-          <option value="Iraq">Iraq </option>
-          <option value="Irlande">Irlande </option>
-          <option value="Islande">Islande </option>
-          <option value="Israel">Israel </option>
-          <option value="Italie">italie </option>
-          <option value="Jamaique">Jamaique </option>
-          <option value="Jan Mayen">Jan Mayen </option>
-          <option value="Japon">Japon </option>
-          <option value="Jersey">Jersey </option>
-          <option value="Jordanie">Jordanie </option>
-          <option value="Kazakhstan">Kazakhstan </option>
-          <option value="Kenya">Kenya </option>
-          <option value="Kirghizstan">Kirghizistan </option>
-          <option value="Kiribati">Kiribati </option>
-          <option value="Koweit">Koweit </option>
-          <option value="Laos">Laos </option>
-          <option value="Lesotho">Lesotho </option>
-          <option value="Lettonie">Lettonie </option>
-          <option value="Liban">Liban </option>
-          <option value="Liberia">Liberia </option>
-          <option value="Liechtenstein">Liechtenstein </option>
-          <option value="Lituanie">Lituanie </option> 
-          <option value="Luxembourg">Luxembourg </option>
-          <option value="Lybie">Lybie </option>
-          <option value="Macao">Macao </option>
-          <option value="Macedoine">Macedoine </option>
-          <option value="Madagascar">Madagascar </option>
-          <option value="Madère">Madère </option>
-          <option value="Malaisie">Malaisie </option>
-          <option value="Malawi">Malawi </option>
-          <option value="Maldives">Maldives </option>
-          <option value="Mali">Mali </option>
-          <option value="Malte">Malte </option>
-          <option value="Man">Man </option>
-          <option value="Mariannes du Nord">Mariannes du Nord </option>
-          <option value="Maroc">Maroc </option>
-          <option value="Marshall">Marshall </option>
-          <option value="Martinique">Martinique </option>
-          <option value="Maurice">Maurice </option>
-          <option value="Mauritanie">Mauritanie </option>
-          <option value="Mayotte">Mayotte </option>
-          <option value="Mexique">Mexique </option>
-          <option value="Micronesie">Micronesie </option>
-          <option value="Midway">Midway </option>
-          <option value="Moldavie">Moldavie </option>
-          <option value="Monaco">Monaco </option>
-          <option value="Mongolie">Mongolie </option>
-          <option value="Montserrat">Montserrat </option>
-          <option value="Mozambique">Mozambique </option>
-          <option value="Namibie">Namibie </option>
-          <option value="Nauru">Nauru </option>
-          <option value="Nepal">Nepal </option>
-          <option value="Nicaragua">Nicaragua </option>
-          <option value="Niger">Niger </option>
-          <option value="Nigeria">Nigeria </option>
-          <option value="Niue">Niue </option>
-          <option value="Norfolk">Norfolk </option>
-          <option value="Norvege">Norvege </option>
-          <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
-          <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-          <option value="Oman">Oman </option>
-          <option value="Ouganda">Ouganda </option>
-          <option value="Ouzbekistan">Ouzbekistan </option>
-          <option value="Pakistan">Pakistan </option>
-          <option value="Palau">Palau </option>
-          <option value="Palestine">Palestine </option>
-          <option value="Panama">Panama </option>
-          <option value="Papouasie_Nouvelle_Guinee">Papouasie_Nouvelle_Guinee </option>
-          <option value="Paraguay">Paraguay </option>
-          <option value="Pays_Bas">Pays_Bas </option>
-          <option value="Perou">Perou </option>
-          <option value="Philippines">Philippines </option> 
-          <option value="Pologne">Pologne </option>
-          <option value="Polynesie">Polynesie </option>
-          <option value="Porto_Rico">Porto_Rico </option>
-          <option value="Portugal">Portugal </option>
-          <option value="Qatar">Qatar </option>
-          <option value="Republique_Dominicaine">Republique_Dominicaine </option>
-          <option value="Republique_Tcheque">Republique_Tcheque </option>
-          <option value="Reunion">Reunion </option>
-          <option value="Roumanie">Roumanie </option>
-          <option value="Royaume_Uni">Royaume_Uni </option>
-          <option value="Russie">Russie </option>
-          <option value="Rwanda">Rwanda </option>
-          <option value="Sahara Occidental">Sahara Occidental </option>
-          <option value="Sainte_Lucie">Sainte_Lucie </option>
-          <option value="Saint_Marin">Saint_Marin </option>
-          <option value="Salomon">Salomon </option>
-          <option value="Salvador">Salvador </option>
-          <option value="Samoa_Occidentales">Samoa_Occidentales</option>
-          <option value="Samoa_Americaine">Samoa_Americaine </option>
-          <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-          <option value="Senegal">Senegal </option> 
-          <option value="Seychelles">Seychelles </option>
-          <option value="Sierra Leone">Sierra Leone </option>
-          <option value="Singapour">Singapour </option>
-          <option value="Slovaquie">Slovaquie </option>
-          <option value="Slovenie">Slovenie</option>
-          <option value="Somalie">Somalie </option>
-          <option value="Soudan">Soudan </option> 
-          <option value="Sri_Lanka">Sri_Lanka </option> 
-          <option value="Suede">Suede </option>
-          <option value="Suisse">Suisse </option>
-          <option value="Surinam">Surinam </option>
-          <option value="Swaziland">Swaziland </option>
-          <option value="Syrie">Syrie </option>
-          <option value="Tadjikistan">Tadjikistan </option>
-          <option value="Taiwan">Taiwan </option>
-          <option value="Tonga">Tonga </option>
-          <option value="Tanzanie">Tanzanie </option>
-          <option value="Tchad">Tchad </option>
-          <option value="Thailande">Thailande </option>
-          <option value="Tibet">Tibet </option>
-          <option value="Timor_Oriental">Timor_Oriental </option>
-          <option value="Togo">Togo </option> 
-          <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
-          <option value="Tristan da cunha">Tristan de cuncha </option>
-          <option value="Tunisie">Tunisie </option>
-          <option value="Turkmenistan">Turmenistan </option> 
-          <option value="Turquie">Turquie </option>
-          <option value="Ukraine">Ukraine </option>
-          <option value="Uruguay">Uruguay </option>
-          <option value="Vanuatu">Vanuatu </option>
-          <option value="Vatican">Vatican </option>
-          <option value="Venezuela">Venezuela </option>
-          <option value="Vierges_Americaines">Vierges_Americaines </option>
-          <option value="Vierges_Britanniques">Vierges_Britanniques </option>
-          <option value="Vietnam">Vietnam </option>
-          <option value="Wake">Wake </option>
-          <option value="Wallis et Futuma">Wallis et Futuma </option>
-          <option value="Yemen">Yemen </option>
-          <option value="Yougoslavie">Yougoslavie </option>
-          <option value="Zambie">Zambie </option>
-          <option value="Zimbabwe">Zimbabwe </option>
-        </select>
-    </tr>
-    
-    <tr valign="baseline">
-      <td nowrap align="right"></td>
-      <td>
-      <input type="hidden" name="date" " size="32" value="<?php echo date("Y-m-d H:i:s" ); ?>
-      
-      
-      </td>
-    </tr>
-    
-    
-    
-    
-    <tr valign="baseline">
-      <td nowrap align="right">Objet:</td>
-      <td><select name="objet">
-          <option value="Conseil ">Conseil </option>
-          
-          <option value="Donnation">Donnation </option>
-          <option value="Integration Société">Integration Société dans yakaotala</option>
-          <option value="MonterCampagne">Monter une campagne</option>
-          <option value="Offres">Offres </option>
-          <option value="Partenariat">Partenariat </option>
-          <option value="Proposition">Proposition </option>
-          <option value="Publicité">Publicité </option>
-          
-          
-          
-          
-          </select></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right" valign="top">Contenu message:</td>
-      <td><textarea name="contenu_message" cols="50" rows="5"></textarea></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right">&nbsp;</td>
-      <td><input type="submit" value="Enregistrer"></td>
-    </tr>
-  </table>
-  <input type="hidden" name="id" value="">
-  <input type="hidden" name="MM_insert" value="form1">
-</form>
+ Vous avez la possibilité de nous envoyer un mail a notre adresse officielle ou soit remplir le formulaire(qui sera actif lors de la mise a jours ).<p>Email:admin@yakaotala.com en y inserant votre nom, prenom, telephone,pays,ville,objet,contenu du message.<p><p>
+ 
+ Contact phone: 00243810759406/ 0033634496976<p>
+ 
+
   </div>
 	<div data-role="footer">
 		<h4>Copyright Yakaotala(2015) </h4>
@@ -1847,7 +1294,7 @@ Enregistrez-vous ou soit envoyer par mail admin@yakaotala.com les informations a
 	<div data-role="content">	
     <tr>
 
-    <td width="5%"><img src="images/newmedifit1.jpg" alt="" width="148" height="236" border="0" /></td></br>	<br /> <br /> (+243)816701903 - 898053801 -  999916322<br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/newmedifit1.jpg" alt="" width="148" height="236" border="0" /></td></br>	<br /> <br /> (+243)816701903 - 898053801 -  999916322<br />
  <br /> <b>SMASH KILLER, l'insecticide écologique et efficace !<br />   </b><br />
  Contre les mouches, les cafards, les moustiques, les poux, les mites,les punaises, les fourmis, les acariens, les maringouins,...<br />
                                           <br />
@@ -1863,7 +1310,7 @@ Enregistrez-vous ou soit envoyer par mail admin@yakaotala.com les informations a
 
 
 
-<td width="5%"><img src="images/sotracen_banner2010.gif" alt="" width="318" height="136" border="0" /></td></br>	<br /> <br />SOTRACEN sprl
+<td width="5%"><img src="http://www.yakaotala.com/images/sotracen_banner2010.gif" alt="" width="318" height="136" border="0" /></td></br>	<br /> <br />SOTRACEN sprl
 Société de Trading en Afrique Centrale
 ADRESSE : 53 Blvd du 30 juin - Kinshasa / Gombe
 TEL. : (+243)999923853  
@@ -1911,7 +1358,7 @@ désinsectisation, désinfection, dératisation, désherbage.</br>
 	<div data-role="content">	
     
     <tr>
-    <td width="5%"><img src="images/bush_camp_boucherie_2013.jpg" alt="" width="318" height="286" border="0" /></td>
+    <td width="5%"><img src="http://www.yakaotala.com/images/bush_camp_boucherie_2013.jpg" alt="" width="318" height="286" border="0" /></td>
   
 LA BOUCHERIE NUMBER ONE</br><br />
 - 80 têtes par jour d’abattage
@@ -1953,7 +1400,7 @@ Site web : www.boucherienumberone.com
 	</div>
 	<div data-role="content">	
     <tr>
-    <td width="5%"><img src="images/ced_logo1.gif" alt="" width="218" height="100" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/ced_logo1.gif" alt="" width="218" height="100" border="0" /></td></br><br /> <br />
     
 CED & ET</br><br /> <br />
 ADRESSE : Avenue industrielle 17 - Lubumbashi
@@ -1978,7 +1425,7 @@ Service technique : 0816480462
     
     <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -2024,7 +1471,7 @@ Tél 081.71.52.763</br><br /> <br />
     
   <tr>
   
-   <td width="5%"><img src="images/demimpex_logo.gif" alt="" width="288" height="86" border="0" /></td>
+   <td width="5%"><img src="http://www.yakaotala.com/images/demimpex_logo.gif" alt="" width="288" height="86" border="0" /></td>
 Votre distributeur officiel Hitachi , John Deere  et  Merlo en RDC </br><br /> <br />
  
 Activités : Importateur exclusif des marques John Deere, Hitachi et Merlo 
@@ -2044,7 +1491,7 @@ Service technique : 09909088778
  
  
  <tr>
- <td width="5%"><img src="images/italmotors2009.jpg" alt="" width="288" height="186" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/http://www.yakaotala.com/images/italmotors2009.jpg" alt="" width="288" height="186" border="0" /></td>
  
  
  
@@ -2066,7 +1513,7 @@ Site web : www.italmotors.biz
  </br><br /> <br />
  
  <tr>
- <td width="5%"><img src="images/mephartech_logo01.gif" alt="" width="288" height="186" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/mephartech_logo01.gif" alt="" width="288" height="186" border="0" /></td>
  
  
 ACTIVITES :</br><br /> <br />
@@ -2096,7 +1543,7 @@ CONTACT : Mme Marine ISSUMO - Tél. : 0999983 150
  
  <tr></br><br /> <br />
  
- <td width="5%"><img src="images/prodimpex2012_01.jpg" alt="" width="288" height="106" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/prodimpex2012_01.jpg" alt="" width="288" height="106" border="0" /></td></br><br /> <br />
  
 PRODIMPEX sarl est une société reconnue en R.D.Congo,comme Distributeur exclusif des produits :
 YAMAHA, IVECO MOTORS, CALTEX, VISA Generators, TAFE Tracteurs, HUSQVARNA, LISTER PETTER, LOWARA, KINGA, CYCLOR, PHILIPS Medical Systems, KARCHER, KODAK, BACKUP POWER SYSTEM, SOLAR WORLD.</br><br /> <br />
@@ -2120,7 +1567,7 @@ Email : pixkisangani@prodimpex.com
  </tr>
  </br><br /> <br />
  <tr>
- <td width="5%"><img src="images/zahira2011_01.jpg" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/zahira2011_01.jpg" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
  
  ACTIVITES :
 Importateur concessionnaire exclusif des véhicules
@@ -2182,7 +1629,7 @@ Email : saini_raj16@yahoo.com
 	<div data-role="content">
     
     <tr>
-    <td width="5%"><img src="images/GBE_logo1.gif" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/GBE_logo1.gif" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
     
  Groupe Agri Elwyn Blattner</br><br /> <br />
 Adresse : Route des Poids Lourds 2 - Kingabwa Kinshasa</br><br /> <br />
@@ -2197,7 +1644,7 @@ Contact : Michaël Blattner - 0997599280
 <tr>
 
 
-<td width="5%"><img src="images/fermil01_2011.jpg" alt="" width="278" height="106" border="0" /></td></br><br /> <br />
+<td width="5%"><img src="http://www.yakaotala.com/images/fermil01_2011.jpg" alt="" width="278" height="106" border="0" /></td></br><br /> <br />
 
 
 GROUPE FERMIL s.p.r.l
@@ -2223,7 +1670,7 @@ Email : groupefermil@hotmail.com
 <tr>
 
 
-<td width="5%"><img src="images/psaro_2013.jpg" alt="" width="255" height="236" border="0" /></td></br><br /> <br />
+<td width="5%"><img src="http://www.yakaotala.com/images/psaro_2013.jpg" alt="" width="255" height="236" border="0" /></td></br><br /> <br />
 
 Le groupe Hyper Psaro a été créé en 1992, en République démocratique du Congo, à Lubumbashi, et possède actuellement des bureaux à Lubumbashi, Kinshasa et dans une très grande partie de la région du Sud de la RDC. Le groupe est un leader dans la fabrication et la distribution de carburant et de lubrifiants et est actif dans les domaines de l'importation et du commerce de matières premières, de l'agriculture et du transport. Nous possédons des succursales et des filiales à Johannesburg en Afrique du Sud, à Athènes en Grèce et à Bruxelles en Belgique, et nous employons plus de 1500 personnes.
 </br><br /> <br />
@@ -2237,7 +1684,7 @@ Site web : www.psaro.com
 
 <tr>
 
-<td width="5%"><img src="images/nocafex00.jpg" alt="" width="298" height="236" border="0" /></td></br><br /> <br />
+<td width="5%"><img src="http://www.yakaotala.com/images/nocafex00.jpg" alt="" width="298" height="236" border="0" /></td></br><br /> <br />
 
 
 
@@ -2303,7 +1750,7 @@ Transport fluvial : Kinshasa - Brazzaville - Mbandaka - Akula - Bumba - Kisangan
 	<div data-role="content">	
     
     <tr>
-    <td width="5%"><img src="images/GBE_logo1.gif" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/GBE_logo1.gif" alt="" width="258" height="106" border="0" /></td></br><br /> <br />
     
  Groupe Agri Elwyn Blattner</br><br /> <br />
 Adresse : Route des Poids Lourds 2 - Kingabwa Kinshasa</br><br /> <br />
@@ -2331,7 +1778,7 @@ Contact : Michaël Blattner - 0997599280
 	</div>
 	<div data-role="content">
     <tr>
- <td width="5%"><img src="images/mephartech_logo01.gif" alt="" width="288" height="186" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/mephartech_logo01.gif" alt="" width="288" height="186" border="0" /></td>
  
  
 ACTIVITES :</br><br /> <br />
@@ -3425,7 +2872,7 @@ ACTIVITES : <p>
     
     
     <tr>
-    <td width="5%"><img src="images/aaa_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/aaa_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
     
     Garage toutes marques spécialisé Land Rover et Ford.
 </br><br /> <br />
@@ -3448,7 +2895,7 @@ Magasin pièces de rechange - Tél. : 0999901534
    <tr>
       
       
-      <td width="5%"><img src="images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
+      <td width="5%"><img src="http://www.yakaotala.com/images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
       
       
 AGRIZEX
@@ -3479,7 +2926,7 @@ Service après vente, entretien et pièces de rechange dans notre garage disposa
  <tr>
  
  
- <td width="5%"><img src="images/amco_2013_1.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/amco_2013_1.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
  
 AFRICAN MOTORS COMPANY </br><br /> <br />
 
@@ -3503,7 +2950,7 @@ Site web : www.ford-rdc.com
  <tr>
  
  
- <td width="5%"><img src="images/arnocongo_2013.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/arnocongo_2013.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
  
  ARNO S.P.R.L.
 Importateur exclusif en RDC de LAND ROVER, ISUZU, CHEVROLET et DAIHATSU 
@@ -3531,7 +2978,7 @@ Visitez notre site web : www.arnocongo.com
  
  <tr>
  
-  <td width="5%"><img src="images/atc01_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/atc01_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
 ATC NISSAN
 
 ADRESSE : Boulevard du 30 juin - Socimat, Kinshasa - Gombe<br /> <br />
@@ -3550,7 +2997,7 @@ site web : www.atc-drc.net
  <tr>
  
  
-  <td width="5%"><img src="images/autocenter2007.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/autocenter2007.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
   
 AUTOCENTER</br><br /> <br />
 Avenue du livre 111 - Kinshasa Gombe
@@ -3572,7 +3019,7 @@ Location et vente de canots hors-bord
  
  <tr>
  
- <td width="5%"><img src="images/comoco_Header_01.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/comoco_Header_01.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
  
 COMOCO
 
@@ -3586,7 +3033,7 @@ TEL. : (+243)815048509 - EMAIL : comoco@ic.cd
  <tr>
  
  
-  <td width="5%"><img src="images/demimpex01_2012.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/demimpex01_2012.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
   
   
  DEMAF - DEMIMPEX AFRIQUE
@@ -3610,7 +3057,7 @@ site web : www.vw-rdc.com
  
  <tr>
  
- <td width="5%"><img src="images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
  
  
 ITAL MOTORS sprl
@@ -3636,7 +3083,7 @@ Site web : www.italmotors.biz
  <tr>
  
  
-   <td width="5%"><img src="images/logo_japanmotor.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+   <td width="5%"><img src="http://www.yakaotala.com/images/logo_japanmotor.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
    
    
 JAPAN MOTORS AFRICA</br><br /> <br />
@@ -3659,7 +3106,7 @@ garage@japanmotors.cd : (+243)999937332</br><br />
  
  <tr>
  
-  <td width="5%"><img src="images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
   
 KIVU MOTOR </br><br /> <br />
 Adresse : Avenue Ishasha 12 - Quartier Katindo - Goma - Nord Kivu</br><br /> <br />
@@ -3678,7 +3125,7 @@ Site web : www.kivumotor.com
  
  <tr>
  
-   <td width="5%"><img src="images/ltcimpex01_2012.jpg" alt="" width="278" height="156" border="0" /></td></br><br /> <br />
+   <td width="5%"><img src="http://www.yakaotala.com/images/ltcimpex01_2012.jpg" alt="" width="278" height="156" border="0" /></td></br><br /> <br />
    
    
 L.T.CIMPEX sprl
@@ -3742,7 +3189,7 @@ Visitez notre site web : www.ltcimpex.com
     <tr>
  
  
-   <td width="5%"><img src="images/logo_japanmotor.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+   <td width="5%"><img src="http://www.yakaotala.com/images/logo_japanmotor.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
    
    
 JAPAN MOTORS AFRICA</br><br /> <br />
@@ -3792,7 +3239,7 @@ garage@japanmotors.cd : (+243)999937332</br><br />
        
     <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -3841,7 +3288,7 @@ Tél 081.71.52.763</br><br /> <br />
     <tr>
     
     
-       <td width="5%"><img src="images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
+       <td width="5%"><img src="http://www.yakaotala.com/images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
      
      
@@ -3921,7 +3368,7 @@ DT Pierre MATONDO Tél. : 0999935757</br><br />
        
     <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -3954,7 +3401,7 @@ Site web : www.biaoverseas.com
 
 <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -4001,7 +3448,7 @@ Tél 081.71.52.763</br><br /> <br />
     
      <tr>
  
- <td width="5%"><img src="images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
  
  
 ITAL MOTORS sprl
@@ -4026,7 +3473,7 @@ Site web : www.italmotors.biz
 
 <tr>
 
- <td width="5%"><img src="images/smt_sdlg_yanma_goodsense_2011.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/smt_sdlg_yanma_goodsense_2011.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
 
 
 SMT 
@@ -4052,7 +3499,7 @@ Notre site web : www.industrial-rdc.com</br><br /> <br />
 
 <tr>
   
-   <td width="5%"><img src="images/demimpex_logo.gif" alt="" width="288" height="86" border="0" /></td>
+   <td width="5%"><img src="http://www.yakaotala.com/images/demimpex_logo.gif" alt="" width="288" height="86" border="0" /></td>
 Votre distributeur officiel Hitachi , John Deere  et  Merlo en RDC </br><br /> <br />
  
 Activités : Importateur exclusif des marques John Deere, Hitachi et Merlo 
@@ -4101,7 +3548,7 @@ Service technique : 09909088778
     <tr>
     
     
-     <td width="5%"><img src="images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
      
      PRODUITS :
 - Consommables automobiles AMC, Donaldson et NGK</br><br /> 
@@ -4140,7 +3587,7 @@ Comptabilité :
 <tr>
 
 
- <td width="5%"><img src="images/realtech_logo02.gif" alt="" width="288" height="186" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/realtech_logo02.gif" alt="" width="288" height="186" border="0" /></td>
  
  
  Activités : tous travaux de tuyauterie ACIER, PEHD, PVC, cuivre, inox, PPRC, Diamètres de 1 à 1000 mm :</br><br /><br />
@@ -4186,7 +3633,7 @@ E-mail : realtechkin@yahoo.fr
     <tr>
     
     
-     <td width="5%"><img src="images/atco_logo.gif" alt="" width="288" height="186" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/atco_logo.gif" alt="" width="288" height="186" border="0" /></td>
     
     ADRESSES : 
 *  728, avenue Tombalbaye - Kinshasa/Gombe
@@ -4216,7 +3663,7 @@ ACTIVITES
   <tr>
       
       
-      <td width="5%"><img src="images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
+      <td width="5%"><img src="http://www.yakaotala.com/images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
       
       
 AGRIZEX
@@ -4248,7 +3695,7 @@ Service après vente, entretien et pièces de rechange dans notre garage disposa
       <tr>
       
       
-       <td width="5%"><img src="images/bricocenter_2012.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />BRICO-CENTER</br><br /> <br />
+       <td width="5%"><img src="http://www.yakaotala.com/images/bricocenter_2012.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />BRICO-CENTER</br><br /> <br />
 Avenue du Commerce 43, (à côté de la clinique CMK) Kinshasa Gombe</br><br /> <br />
 Tél. : +243.99.99.10 400 & +243.81.99.10.400
 E-mail : info@brico-center.com - Site web : www.brico-center.com
@@ -4263,7 +3710,7 @@ E-mail : info@brico-center.com - Site web : www.brico-center.com
       
       <tr>
  
- <td width="5%"><img src="images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/italmotors2009.jpg" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
  
  
 ITAL MOTORS sprl
@@ -4316,7 +3763,7 @@ Site web : www.italmotors.biz
        
     <tr>
     
-    <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
     
 SAFRICAS
 
@@ -4392,7 +3839,7 @@ Visitez notre site Web : www.safricas.com
  <tr>
  
  
-  <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
   
 ENTHALPY sprl</br><br /> <br />
 Adresse : Avenue Malemba - Nkulu 10 - Kinshasa Gombe</br><br /> <br />
@@ -4410,7 +3857,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
  
  <tr>
  
- <td width="5%"><img src="images/sotraco01_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/sotraco01_2012.jpg" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
  
  
 SOTRACO s.p.r.l. </br><br /> <br />
@@ -4430,7 +3877,7 @@ Activités :</br><br /> <br />
  
  <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -4503,7 +3950,7 @@ Site web : www.biaoverseas.com
     <tr>
  
  
-  <td width="5%"><img src="images/autocenter2007.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/autocenter2007.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
   
 AUTOCENTER</br><br /> <br />
 Avenue du livre 111 - Kinshasa Gombe
@@ -4527,7 +3974,7 @@ Location et vente de canots hors-bord
  <tr>
  
  
-  <td width="5%"><img src="images/renka_2007.jpg" alt="" width="258" height="176" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/renka_2007.jpg" alt="" width="258" height="176" border="0" /></td></br><br /> <br />
   
   BUDGET  CAR  RENTAL  (RENKA SPRL)
 </br><br /> <br />
@@ -4549,7 +3996,7 @@ VEHICULES : Berlines, Jeeps 4X4, Mini-bus, pick up et camions. </br><br /> <br /
  
 <tr>
 
-  <td width="5%"><img src="images/eworld_travel2013.jpg" alt="" width="268" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/eworld_travel2013.jpg" alt="" width="268" height="206" border="0" /></td></br><br /> <br />
   
   Nos services :</br><br /> <br />
 Service visas - Organisation de safari en Afrique du Sud - Assurance voyage - Location de véhicules - Protocole aéroport et beach - Réservation vols et hôtels - Service 24/24h.</br><br /> <br />
@@ -4579,7 +4026,7 @@ Directrice Gérante
 
 <tr>
 
-<td width="5%"><img src="images/elittransport01_2012.jpg" alt="" width="268" height="176" border="0" /></td></br><br /> <br />
+<td width="5%"><img src="http://www.yakaotala.com/images/elittransport01_2012.jpg" alt="" width="268" height="176" border="0" /></td></br><br /> <br />
 
 
 ELIT TRANSPORT
@@ -4604,7 +4051,7 @@ A la recherche d'un partenaire pour vos transports à Kinshasa? Elit Transport a
     
     
     
-    <td width="5%"><img src="images/rayan_travel_and_tourism_2013-2.jpg" alt="" width="248" height="206" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/rayan_travel_and_tourism_2013-2.jpg" alt="" width="248" height="206" border="0" /></td></br><br /> <br />
     
     Rayan Travel & Tourism<br /> <br />
 - Billets d'avion (National & International)<br /> <br />
@@ -4661,7 +4108,7 @@ E-mail: rayantrvl@hotmail.com, rayantravel2@outlook.fr
     
     
     
-    <td width="5%"><img src="images/congo_paint06_2013.jpg" alt="" width="268" height="206" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/congo_paint06_2013.jpg" alt="" width="268" height="206" border="0" /></td></br><br /> <br />
     CONGO PAINT
 Adresse : Avenue J. Kabasele (ex Flambeau)</br><br /> <br /> Kinshasa Gombe</br><br /> <br />
 Tél. : +243 (0)993 003 800 / +243 (0)813 003 800 / +243 (0)853 003 800</br><br /> <br />
@@ -4723,7 +4170,7 @@ Content
    <tr>
       
       
-      <td width="5%"><img src="images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
+      <td width="5%"><img src="http://www.yakaotala.com/images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
       
       
 AGRIZEX
@@ -4752,7 +4199,7 @@ Service après vente, entretien et pièces de rechange dans notre garage disposa
 
 <tr>
  
-  <td width="5%"><img src="images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
   
 KIVU MOTOR </br><br /> <br />
 Adresse : Avenue Ishasha 12 - Quartier Katindo - Goma - Nord Kivu</br><br /> <br />
@@ -4772,7 +4219,7 @@ Site web : www.kivumotor.com
      <tr>
     
     
-     <td width="5%"><img src="images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
      
      PRODUITS :
 - Consommables automobiles AMC, Donaldson et NGK</br><br /> 
@@ -4835,7 +4282,7 @@ Content
     <tr>
     
     
-     <td width="5%"><img src="images/auto-rechange-2014_01.jpg" alt="" width="288" height="310" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/auto-rechange-2014_01.jpg" alt="" width="288" height="310" border="0" /></td>
     
     
     
@@ -4845,7 +4292,7 @@ Content
     
     <tr>
  
-  <td width="5%"><img src="images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/kivumotor2011_02.gif" alt="" width="298" height="106" border="0" /></td></br><br /> <br />
   
 KIVU MOTOR </br><br /> <br />
 Adresse : Avenue Ishasha 12 - Quartier Katindo - Goma - Nord Kivu</br><br /> <br />
@@ -4864,7 +4311,7 @@ Site web : www.kivumotor.com
  
  <tr>
  
- <td width="5%"><img src="images/sko_2010.jpg" alt="" width="298" height="306" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/sko_2010.jpg" alt="" width="298" height="306" border="0" /></td></br><br /> <br />
  
  Spécialisé en camions de brousse</br><br /> <br />
  
@@ -4888,7 +4335,7 @@ EMAIL : sko@vodanet.cd
  <tr>
     
     
-     <td width="5%"><img src="images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
      
      PRODUITS :
 - Consommables automobiles AMC, Donaldson et NGK</br><br /> 
@@ -4944,7 +4391,7 @@ Content
     
     
     <tr>
-     <td width="5%"><img src="images/cobil01_2011.jpg" alt="" width="288" height="246" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/cobil01_2011.jpg" alt="" width="288" height="246" border="0" /></td>
     
     
   
@@ -4969,7 +4416,7 @@ Service client - 0819506079
       <tr>
       
       
-       <td width="5%"><img src="images/sepcongo_2014_01.jpg" alt="" width="288" height="246" border="0" /></td></br><br /></br>
+       <td width="5%"><img src="http://www.yakaotala.com/images/sepcongo_2014_01.jpg" alt="" width="288" height="246" border="0" /></td></br><br /></br>
     
     SEP Congo est l'expert au coeur de la logistique pétrolière congolaise.
 
@@ -4985,7 +4432,7 @@ Site web: www.sepcongo.com
       
       
       <tr>
-      <td width="5%"><img src="images/sodep_2012.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br>
+      <td width="5%"><img src="http://www.yakaotala.com/images/sodep_2012.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br>
       
       
  SODEP</br><br /></br>
@@ -5029,7 +4476,7 @@ Importation, transport, stockage, vente et livraison sur site de carburant Gasoi
 
 
 <tr>
-      <td width="5%"><img src="images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br>
+      <td width="5%"><img src="http://www.yakaotala.com/images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br>
       
       
       STUDIO PHOTO PROFESSIONNEL
@@ -5076,7 +4523,7 @@ Tél. 081.99.44.520 - Email : foxcep@gmail.com
 <tr>
       
       
-      <td width="5%"><img src="images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
+      <td width="5%"><img src="http://www.yakaotala.com/images/agrizex1_2010.jpg" alt="" width="278" height="206" border="0" /></td></br><br /> <br />
       
       
 AGRIZEX
@@ -5134,7 +4581,7 @@ Content
 <tr>
       
       
-      <td width="5%"><img src="images/afr_sud_jpg.jpg" alt="" width="148" height="86" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/afr_sud_jpg.jpg" alt="" width="148" height="86" border="0" /></td><p>
       
       AFRIQUE DU SUD<p>
       
@@ -5155,7 +4602,7 @@ Kinshasa/Gombe<p>
       
       <tr>
       
-      <td width="5%"><img src="images/algerie.jpg" alt="" width="148" height="86" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/algerie.jpg" alt="" width="148" height="86" border="0" /></td><p>
       ALGERIE<p>
       Tel:+243 12 22 470 22 48<p>
       50-52, Av. Colonel Ebeya
@@ -5166,7 +4613,7 @@ Kinshasa/Gombe<p>
       
       <tr>
       
-      <td width="5%"><img src="images/allemagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/allemagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
       ALLEMAGNE<p>
       
       Tel:+243 81 556 13 80<p>
@@ -5184,7 +4631,7 @@ Kinshasa/Gombe<p>
 
 <tr>
       
-      <td width="5%"><img src="images/angola.jpg" alt="" width="148" height="86" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/angola.jpg" alt="" width="148" height="86" border="0" /></td><p>
       ANGOLA<p>
       
       Tel:+243 999 90 69 27</p>
@@ -5203,7 +4650,7 @@ Kinshasa/Gombe<p>
       
 <tr>
       
-      <td width="5%"><img src="images/belgiques.jpg" alt="" width="148" height="86" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/belgiques.jpg" alt="" width="148" height="86" border="0" /></td><p>
       BELGIQUE<p>
       
      Tel:+243 89 892 42 33</p>
@@ -5225,7 +4672,7 @@ Kinshasa/Gombe</p>
 
 <tr>
 
- <td width="5%"><img src="images/bulgarie.jpg" alt="" width="148" height="86" border="0" /></td><p>
+ <td width="5%"><img src="http://www.yakaotala.com/images/bulgarie.jpg" alt="" width="148" height="86" border="0" /></td><p>
  
  BULGARIE<p>
    
@@ -5241,7 +4688,7 @@ Kinshasa, Democratic Republic of the Congo<p>
 
   <tr>
 
-<td width="5%"><img src="images/cameroune.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/cameroune.jpg" alt="" width="148" height="86" border="0" /></td><p>
 CAMEROUNE<p>
 
 Adresse:171 blvd du 30 Juin
@@ -5257,7 +4704,7 @@ international: +243.1.221.434<p>
 
 
 <tr>
-<td width="5%"><img src="images/canada.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/canada.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 CANADA<p>
 Adresse	17, Pumbu Avenue
@@ -5281,7 +4728,7 @@ Site Web	http://www.canadainternational.gc.ca/congo/
 
 
 <tr>
-<td width="5%"><img src="images/centre_afrique.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/centre_afrique.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 CENTRE AFRIQUE<p>
 +243 12 33 517	<p>11, Av. Pumbu
@@ -5291,7 +4738,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/chine.jpg" alt="" width="148" height="86"border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/chine.jpg" alt="" width="148" height="86"border="0" /></td><p>
 
 CHINE<p>
 Tel:+243 81 333 02 63
@@ -5306,7 +4753,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/congo.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/congo.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 CONGO<p>
 Boulevard du 30 Juin
@@ -5320,7 +4767,7 @@ Tel:(243) 884 67 59<p>
 
 
 <tr>
-<td width="5%"><img src="images/corree_sud.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/corree_sud.jpg" alt="" width="148" height="86" border="0" /></td><p>
 COREE DU SUD<p>
 
 
@@ -5338,7 +4785,7 @@ COREE DU SUD<p>
 
 
 <tr>
-<td width="5%"><img src="images/cote.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/cote.jpg" alt="" width="148" height="86" border="0" /></td><p>
 COTE D'IVOIRE<p>
 
 
@@ -5359,7 +4806,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/egypte.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/egypte.jpg" alt="" width="148" height="86" border="0" /></td><p>
 EGYPTE<p>
 Adresse	519 AVENUE OUGANDA
 GOMBE Kinshasa
@@ -5375,7 +4822,7 @@ international: +243.81.880.3728<p>
 
 
 <tr>
-<td width="5%"><img src="images/espagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/espagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
 ESPAGNE<p>
 Tel:+243 81 884 31 95
 Fax: +243 81 301 03 96<p>
@@ -5391,7 +4838,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/etats.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/etats.jpg" alt="" width="148" height="86" border="0" /></td><p>
 ETATS UNIS<p>
 Tel:+243 81 880 3724<p>
 AEkinshasaConsular@state.gov<p>
@@ -5409,7 +4856,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/france.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/france.jpg" alt="" width="148" height="86" border="0" /></td><p>
 FRANCE<p>
 Tel:+243 81 700 66 85
 +243 81 555 99 99
@@ -5427,7 +4874,7 @@ Kinshasa/Ngaliema<p>
 
 
 <tr>
-<td width="5%"><img src="images/gabon.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/gabon.jpg" alt="" width="148" height="86" border="0" /></td><p>
 GABON<p>
 Adresse:  KINSHASA - 167 av. Du Colonel Mondjiba, Kintambo<p>
 Téléphone:  (+243)999931689<p>
@@ -5442,7 +4889,7 @@ Email:  ambgab-rdc@yahoo.fr
 
 
 <tr>
-<td width="5%"><img src="images/Ghana.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/Ghana.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 GHANA<p>
 Adresse:  KINSHASA - 206 av. Pierre Mulele, Gombe<p>
@@ -5454,7 +4901,7 @@ Téléphone:  (+243)817008795<p>
 
 
 <tr>
-<td width="5%"><img src="images/grande_bretagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/grande_bretagne.jpg" alt="" width="148" height="86" border="0" /></td><p>
 GRANDE BRETAGNE<p>
 Av. Batetela
 Kinshasa/Gombe
@@ -5472,7 +4919,7 @@ Fax: +243 81 346 42 91<p>
 
 
 <tr>
-<td width="5%"><img src="images/grece.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/grece.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 GRECE<p>
 87, Blvd du 30 Juin
@@ -5494,7 +4941,7 @@ gremb.kin@mfa.gr
 
 
 <tr>
-<td width="5%"><img src="images/AMBASSADE-DE-GUINEE_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/AMBASSADE-DE-GUINEE_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 GUINEE<p>
 
@@ -5509,7 +4956,7 @@ Fax : ZHZCV<p>
 
 
 <tr>
-<td width="5%"><img src="images/AMBASSADE-DE-L-INDE_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/AMBASSADE-DE-L-INDE_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 INDE
 
@@ -5525,7 +4972,7 @@ Fax : +243 81 55 59 774<p>
 
 
 <tr>
-<td width="5%"><img src="images/AMBASSADE-D-IRAN_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/AMBASSADE-D-IRAN_vignette.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 IRAN<p>
 
@@ -5540,7 +4987,7 @@ Tel'0817005298<p>
 
 
 <tr>
-<td width="5%"><img src="images/flag_israel.png" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/flag_israel.png" alt="" width="148" height="86" border="0" /></td><p>
 
 ISRAEL<p>
 
@@ -5558,7 +5005,7 @@ Téléphone: +243(0)8 84 19 49
 
 
 <tr>
-<td width="5%"><img src="images/italie.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/italie.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 ITALIE<p>
 
@@ -5571,7 +5018,7 @@ Téléfax: (+243) 815553654<p>
 
 
 <tr>
-<td width="5%"><img src="images/japon.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/japon.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 JAPON <p>
 
@@ -5589,7 +5036,7 @@ JAPON <p>
 
 
 <tr>
-<td width="5%"><img src="images/kenya.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/kenya.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 KENYA <p>
 
@@ -5602,7 +5049,7 @@ KENYA <p>
 
 
 <tr>
-<td width="5%"><img src="images/maroc.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/maroc.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 MAROC <p>
 
@@ -5613,7 +5060,7 @@ MAROC <p>
 
 
 <tr>
-<td width="5%"><img src="images/mexique.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/mexique.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 MEXIQUE <p>
 
@@ -5629,7 +5076,7 @@ MEXIQUE <p>
 
 
 <tr>
-<td width="5%"><img src="images/nigeria.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/nigeria.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 NIGERIA <p>
 
@@ -5643,7 +5090,7 @@ NIGERIA <p>
 
 
 <tr>
-<td width="5%"><img src="images/pologne.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/pologne.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 POLOGNE<p>
 
@@ -5659,7 +5106,7 @@ POLOGNE<p>
 
 
 <tr>
-<td width="5%"><img src="images/portugal.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/portugal.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 PORTUGAL<p>
 
@@ -5670,7 +5117,7 @@ PORTUGAL<p>
 
 
 <tr>
-<td width="5%"><img src="images/suede.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/suede.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 SUEDE<p>
 
@@ -5689,7 +5136,7 @@ Kinshasa/Gombe<p>
 
 
 <tr>
-<td width="5%"><img src="images/swisse.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/swisse.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 SUISSE<p>
 
@@ -5706,7 +5153,7 @@ kin.vertretung@eda.admin.ch<p>
 
 
 <tr>
-<td width="5%"><img src="images/togo.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/togo.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 TOGO<p>
 
@@ -5721,7 +5168,7 @@ TOGO<p>
 
 
 <tr>
-<td width="5%"><img src="images/union.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/union.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 UNION EUROPEENNE<p>
 
@@ -5740,7 +5187,7 @@ Tel:8841878
 
 
 <tr>
-<td width="5%"><img src="images/zambie.jpg" alt="" width="148" height="86" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/zambie.jpg" alt="" width="148" height="86" border="0" /></td><p>
 
 ZAMBIE<p>
 
@@ -5756,7 +5203,7 @@ ambzambia@ic.cd<p>
 
 
 <tr>
-<td width="5%"><img src="images/MONUSCO.png" alt="" width="148" height="106" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/MONUSCO.png" alt="" width="148" height="106" border="0" /></td><p>
 
 MONUSCO<p>
 
@@ -5844,7 +5291,7 @@ Content
     
     <tr>
     
-      <td width="5%"><img src="images/lejeune_logo_221.gif" alt="" width="288" height="116" border="0" /></td></br><br /></br>
+      <td width="5%"><img src="http://www.yakaotala.com/images/lejeune_logo_221.gif" alt="" width="288" height="116" border="0" /></td></br><br /></br>
       
       
 
@@ -5897,7 +5344,7 @@ Visitez notre site web : www.lejeune.eu
     
     <tr>
     
-      <td width="5%"><img src="images/gpo_logo.jpg" alt="" width="288" height="116" border="0" /></td></br><br /></br>
+      <td width="5%"><img src="http://www.yakaotala.com/images/gpo_logo.jpg" alt="" width="288" height="116" border="0" /></td></br><br /></br>
       
       
  ACTIVITES : </br><br /></br>
@@ -5935,7 +5382,7 @@ Visitez notre site web : www.gpopartners.com</br><br /></br>
       
       <tr>
       
-       <td width="5%"><img src="images/kpmg_2013_01.jpg" alt="" width="278" height="306" border="0" /></td></br><br /></br>
+       <td width="5%"><img src="http://www.yakaotala.com/images/kpmg_2013_01.jpg" alt="" width="278" height="306" border="0" /></td></br><br /></br>
       
       
  Un engagement fort pour l'accompagnement du développement de l'Afrique Francophone Subsaharienne et du monde des affaires</br><br /></br>
@@ -5955,7 +5402,7 @@ Paul Mbodi, Associé
       
       <tr>
       
-      <td width="5%"><img src="images/trade_service_2013.jpg" alt="" width="258" height="286" border="0" /></td></br><br /></br>
+      <td width="5%"><img src="http://www.yakaotala.com/images/trade_service_2013.jpg" alt="" width="258" height="286" border="0" /></td></br><br /></br>
       
       
       
@@ -6018,7 +5465,7 @@ Content
     
     
     
-      <td width="5%"><img src="images/bcdc_2013.jpg" alt="" width="268" height="316" border="0" /></td><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/bcdc_2013.jpg" alt="" width="268" height="316" border="0" /></td><p>
       
 KINSHASA
 
@@ -6202,7 +5649,7 @@ WESTERN UNION : Les services de transferts internationaux Western Union sont dis
 
 
 
-  <td width="5%"><img src="images/biac2012.jpg" alt="" width="298" height="396" border="0" /></td><p>
+  <td width="5%"><img src="http://www.yakaotala.com/images/biac2012.jpg" alt="" width="298" height="396" border="0" /></td><p>
 
 
 </tr>
@@ -6214,7 +5661,7 @@ WESTERN UNION : Les services de transferts internationaux Western Union sont dis
 
 
 
-  <td width="5%"><img src="images/bic_2013_1.jpg" alt="" width="298" height="396" border="0" /></td><p>
+  <td width="5%"><img src="http://www.yakaotala.com/images/bic_2013_1.jpg" alt="" width="298" height="396" border="0" /></td><p>
   
   
   KINSHASA
@@ -6379,7 +5826,7 @@ Visitez notre site web : www.bic.cd
 <tr>
 
 
- <td width="5%"><img src="images/ecobank_title02.gif" alt="" width="348" height="76" border="0" /></td><p>
+ <td width="5%"><img src="http://www.yakaotala.com/images/ecobank_title02.gif" alt="" width="348" height="76" border="0" /></td><p>
 
 
 
@@ -6415,7 +5862,7 @@ Tél. : +33 (0) 155232340 - Fax. : +33 (0) 147764241
 
 
 
-<td width="5%"><img src="images/rawbank_2014.jpg" alt="" width="268" height="306" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/rawbank_2014.jpg" alt="" width="268" height="306" border="0" /></td><p>
 
 RAWBANK : le banquier des Entrepreneurs dynamiques<p>
 
@@ -6478,7 +5925,7 @@ Analyse de projets d'investissement.<p>
 
 
 
-<td width="5%"><img src="images/standard_bank_logo_01.jpg" alt="" width="298" height="66" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/standard_bank_logo_01.jpg" alt="" width="298" height="66" border="0" /></td><p>
 
 Kinshasa Branch 
 Manager: Billy Mpoyi 
@@ -6523,7 +5970,7 @@ akokac@standardbank.cd<p>
 <tr>
 
 
-<td width="5%"><img src="images/tmb_2013.jpg" alt="" width="288" height="376" border="0" /></td><p></tr>
+<td width="5%"><img src="http://www.yakaotala.com/images/tmb_2013.jpg" alt="" width="288" height="376" border="0" /></td><p></tr>
 
 Content		
 	</div>
@@ -6554,7 +6001,7 @@ Content
     
     
     
-    <td width="5%"><img src="images/rayan_travel_and_tourism_2013-2.jpg" alt="" width="288" height="376" border="0" /></td></tr><p>
+    <td width="5%"><img src="http://www.yakaotala.com/images/rayan_travel_and_tourism_2013-2.jpg" alt="" width="288" height="376" border="0" /></td></tr><p>
     
     
     Rayan Travel & Tourism<p>
@@ -6587,7 +6034,7 @@ E-mail: rayantrvl@hotmail.com, rayantravel2@outlook.fr<p>
 
 
 
-<td width="5%"><img src="images/soficom02_2012.jpg" alt="" width="298" height="96" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/soficom02_2012.jpg" alt="" width="298" height="96" border="0" /></td></tr><p>
 Adresse : Avenue des Sénégalais 1, (Gare Centrale) - Kinshasa - Gombe<p>
 Tél: 0998724444, 0819872444
 Email : dir@groupsoficom.com 
@@ -6623,7 +6070,7 @@ Intérieur : Ariwara - Gbadolite - Kimpese - Mbuji-Mayi - Aru - Gemena - Kindu -
 <tr>
 
 
-<td width="5%"><img src="images/solidaire_transfert02.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/solidaire_transfert02.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
 GROUPE SOLIDAIRE<p>
 Adresse : Boulevard du 30 Juin - Kinshasa/Gombe, en face des Galeries Présidentielles, immeuble Regina.<p>
 Fondateurs du groupe Solidaire : Riad Roumieh et Akram Mourad - Tel: +243.99.94.10.410
@@ -6741,9 +6188,9 @@ Content
 
 
 
-<td width="5%"><img src="images/dialogues_logo.gif" alt="" width="298" height="86" border="0" /></td></tr>
+<td width="5%"><img src="http://www.yakaotala.com/images/dialogues_logo.gif" alt="" width="298" height="86" border="0" /></td></tr>
 
-<td width="5%"><img src="images/dialogues002_small.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dialogues002_small.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
 
 
 ASBL Dialogues - Galerie d'art contemporain au Musée National de Lubumbashi.<p>
@@ -6815,7 +6262,7 @@ Content
 
 
 
-<td width="5%"><img src="images/fox_2013_01.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/fox_2013_01.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
 
 STUDIO PHOTO PROFESSIONNEL
 SERIGRAPHIE HAUTE CAPACITE
@@ -6832,7 +6279,7 @@ Tél. 081.99.44.520 - Email : foxcep@gmail.com<p>
 <tr>
 
 
-<td width="5%"><img src="images/hasson2011.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/hasson2011.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
 
 GROUPE HASSON & Frère<p>
 
@@ -6896,7 +6343,7 @@ Le Groupe Hasson & Frère a plus de 75 ans de présence active en RDC et est la 
 
 
 
-<td width="5%"><img src="images/fatima_01.gif" alt="" width="298" height="126" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/fatima_01.gif" alt="" width="298" height="126" border="0" /></td></tr><p>
 
 ADRESSE : Avenue de la Paix - Kinshasa Gombe
 TEL. +243(0)998930196 - 0818793590
@@ -6910,7 +6357,7 @@ Tommy Hilfiger - La Coste - Pellini - Sergio Farezzi - Bïsse.<p>
 
 <tr>
 
-<td width="5%"><img src="images/fleuranie2013.jpg" alt="" width="298" height="146" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/fleuranie2013.jpg" alt="" width="298" height="146" border="0" /></td></tr><p>
 
 Fleurannie "Orchidéa"
 Grand hotel de Kinshasa Gombe
@@ -6939,7 +6386,7 @@ Contact : Mme Annie - Tél : 0999930177<p>
 
 </tr>
 <tr>
-      <td width="5%"><img src="images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br><p>
       
       
       STUDIO PHOTO PROFESSIONNEL
@@ -6965,7 +6412,7 @@ Tél. 081.99.44.520 - Email : foxcep@gmail.com
       <tr>
       
       
-       <td width="5%"><img src="images/habitat_decor_kids_2013.jpg" alt="" width="278" height="286" border="0" /></td></br><br /></br><p>
+       <td width="5%"><img src="http://www.yakaotala.com/images/habitat_decor_kids_2013.jpg" alt="" width="278" height="286" border="0" /></td></br><br /></br><p>
        
     L'HABITAT DECOR KIDS<p>
 
@@ -6987,7 +6434,7 @@ Ouvert du lundi au vendredi de 09h à 17h30. Samedi de 09h à 15h<p>
       <tr>
       
      
-       <td width="5%"><img src="images/kasa01_2010.jpg" alt="" width="278" height="106" border="0" /></td></br><br /></br><p>
+       <td width="5%"><img src="http://www.yakaotala.com/images/kasa01_2010.jpg" alt="" width="278" height="106" border="0" /></td></br><br /></br><p>
      
       LA KASA
 
@@ -7010,7 +6457,7 @@ Magasin d'ameublement et de décoration. Votre spécialiste du mobilier d'intér
       <tr>
       
       
-            <td width="5%"><img src="images/nzangula_progress_01.jpg" alt="" width="288" height="106" border="0" /></td></br><br /></br><p>
+            <td width="5%"><img src="http://www.yakaotala.com/images/nzangula_progress_01.jpg" alt="" width="288" height="106" border="0" /></td></br><br /></br><p>
       NZANGULA PROGRESS<p>
 Représentant officiel de la marque GEEPAS 
 
@@ -7057,7 +6504,7 @@ Habillement - Produit de beauté - Articles de décoration intérieures - Ustens
 	<div data-role="content">
 
 
-<td width="5%"><img src="images/habitat_decor_2013.jpg" alt="" width="288" height="306" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/habitat_decor_2013.jpg" alt="" width="288" height="306" border="0" /></td></br><br /><p>
 
 
 
@@ -7079,7 +6526,7 @@ Ouvert du lundi au vendredi de 09h à 17h30. Samedi de 09h à 15h<p>
 
 <tr>
 
-<td width="5%"><img src="images/newcongoelectric01_2012.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/newcongoelectric01_2012.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
 
 
 NEW CONGO ELECTRIC<p>
@@ -7147,7 +6594,7 @@ Vente de matériel électrique, quincaillerie et divers :<p>
 	<div data-role="content">
 
 
-<td width="5%"><img src="images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
 
 
 - Produits electro-ménagers : téléviseurs, climatiseurs, splits, cuisinières, machines à laver, réfrigérateurs, congélateurs, micro-ondes, Home cinema, lecteurs DVD et les petits électroménagers pour la cuisine (presse oranges, grille pain, etc.)<p>
@@ -7166,7 +6613,7 @@ Site Web : www.jumbo-lux.com - Facebook : Jumbo Lux<p>
 
 
 
-<td width="5%"><img src="images/liberty2011_01.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/liberty2011_01.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
 
 
 LIBERTY<p>
@@ -7185,7 +6632,7 @@ TEL. : +243(0)810369264
 <tr>
 
 
-<td width="5%"><img src="images/duty_free_logo.gif" alt="" width="288" height="106" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/duty_free_logo.gif" alt="" width="288" height="106" border="0" /></td></br><br /><p>
 MAGASIN DIPLOMATIQUE DUTY FREE SHOP NDJILI <p>
 ADRESSE : 10 Av. de l'Equateur, Kinshasa/Gombe. Nouvelle adresse depuis juin 2004
 TEL. : (+243) 998874069<p>
@@ -7221,7 +6668,7 @@ TEL. : (+243) 998874069<p>
 	<div data-role="content">
 
 
-<td width="5%"><img src="images/boutique_lita1.jpg" alt="" width="288" height="86" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/boutique_lita1.jpg" alt="" width="288" height="86" border="0" /></td></br><br /><p>
 
 BOUTIQUE LITA<p>
 Vente de vêtements prêt à porter hommes et dames - Chaussures - Bijoux de fantaisie<p>
@@ -7238,7 +6685,7 @@ Tél. : 0999923410 - yezelita@yahoo.fr<p>
 
 <tr>
 
-<td width="5%"><img src="images/day_to_day_2013.jpg
+<td width="5%"><img src="http://www.yakaotala.com/images/day_to_day_2013.jpg
 " alt="" width="288" height="186" border="0" /></td></br><br /><p>
 
 
@@ -7256,7 +6703,7 @@ Puériculture, baby shop
 <tr>
 
 
-<td width="5%"><img src="images/giovane_gentile_01.jpg
+<td width="5%"><img src="http://www.yakaotala.com/images/giovane_gentile_01.jpg
 " alt="" width="288" height="306" border="0" /></td></br><br /><p>
 ALOÏS TEXTILE - GIOVANE G. SHOP<p>
 Avenue de l'Equateur - Galerie du Fleuve - Local 3 - Kinshasa Gombe<p>
@@ -7317,7 +6764,7 @@ www.giovanegentile.com
     <tr>
 
 
-<td width="5%"><img src="images/dabien_2014_01.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dabien_2014_01.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
 
 ACTIVITES :
 Fabrication de mèches pour coiffures afro. Importation et distribution de produits de beauté et cheveux artificiels.<p>
@@ -7365,7 +6812,7 @@ Email : cambui@hanmail.net<p>
     <tr>
 
 
-<td width="5%"><img src="images/bellemaison01.gif" alt="" width="288" height="146" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/bellemaison01.gif" alt="" width="288" height="146" border="0" /></td></br><br /><p>
 
 BELLE MAISON<p>
 ADRESSE : 72 avenue de la Paix - Kinshasa/Gombe
@@ -7386,7 +6833,7 @@ Location chaises habillées et tables.<p>
 <tr>
 
 
-<td width="5%"><img src="images/dreamhome01_2012.jpg" alt="" width="288" height="126" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dreamhome01_2012.jpg" alt="" width="288" height="126" border="0" /></td></br><br /><p>
 
 DREAM HOME sprl<p>
 
@@ -7408,7 +6855,7 @@ Décoration intérieure - Rideaux, voiles et tissus d'ameublement + accessoires 
 
 
 <tr>
-<td width="5%"><img src="images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
 
 
 - Produits electro-ménagers : téléviseurs, climatiseurs, splits, cuisinières, machines à laver, réfrigérateurs, congélateurs, micro-ondes, Home cinema, lecteurs DVD et les petits électroménagers pour la cuisine (presse oranges, grille pain, etc.)<p>
@@ -7430,7 +6877,7 @@ Site Web : www.jumbo-lux.com - Facebook : Jumbo Lux<p>
 
 
 
-<td width="5%"><img src="images/habitat_decor_2013.jpg" alt="" width="288" height="306" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/habitat_decor_2013.jpg" alt="" width="288" height="306" border="0" /></td></br><br /><p>
 
 
 
@@ -7481,7 +6928,7 @@ Ouvert du lundi au vendredi de 09h à 17h30. Samedi de 09h à 15h<p>
     <tr>
 
 
-<td width="5%"><img src="images/abeer_pressing2013.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/abeer_pressing2013.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
 </tr>
 
 Abeer pressing 2000<p>
@@ -7523,7 +6970,7 @@ Machine de nouvelle génération pour un service impeccable.<p>
     <tr>
 
 
-<td width="5%"><img src="images/optique_centenaire01_2011.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/optique_centenaire01_2011.jpg" alt="" width="288" height="246" border="0" /></td></br><br /><p>
 
 
 Grand choix et conseils pour le choix des VERRES :<p>
@@ -7549,7 +6996,7 @@ Optique du Centenaire, l’optique de référence à la disposition de vos patie
 
 
 
-<td width="5%"><img src="images/optical_2010.jpg" alt="" width="248" height="306" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/optical_2010.jpg" alt="" width="248" height="306" border="0" /></td></br><br /><p>
 
 
 OPTICAL CENTER KINSHASA<p>
@@ -7599,7 +7046,7 @@ ACTIVITES :<p>
     <tr>
 
 
-<td width="5%"><img src="images/adneyd01_2010.jpg" alt="" width="288" height="286" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/adneyd01_2010.jpg" alt="" width="288" height="286" border="0" /></td></br><br /><p>
 
 
 
@@ -7625,7 +7072,7 @@ adneydimage@wanadoo.fr<p>
 
 
 <tr>
-      <td width="5%"><img src="images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br><p>
+      <td width="5%"><img src="http://www.yakaotala.com/images/fox_2013_01.jpg" alt="" width="288" height="186" border="0" /></td></br><br /></br><p>
       
       
       STUDIO PHOTO PROFESSIONNEL
@@ -7680,7 +7127,7 @@ Tél. 081.99.44.520 - Email : foxcep@gmail.com<p>
     <tr>
 
 
-<td width="5%"><img src="images/extra_plus2008.jpg" alt="" width="278" height="126" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/extra_plus2008.jpg" alt="" width="278" height="126" border="0" /></td></br><br /><p>
 
 EXTRA PLUS SUPERMARCHE<p>
 ADRESSE : Avenue de l'Equateur / Bas-Congo 27 B TEL. : (+243) 999159710<p>
@@ -7698,7 +7145,7 @@ Demandez votre carte de fidélité pour profiter de nombreux avantages "client".
 
 
 
-<td width="5%"><img src="images/ggmart2013_02_01.jpg" alt="" width="278" height="156" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/ggmart2013_02_01.jpg" alt="" width="278" height="156" border="0" /></td></br><br /><p>
 
 
 Adresse : Avenue Tombalbaye 1
@@ -7715,7 +7162,7 @@ Grand centre commercial - Grand parking sécurisé avec plus de 70 places.<p>
 <tr>
 
 
-<td width="5%"><img src="images/hasson2011.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/hasson2011.jpg" alt="" width="298" height="186" border="0" /></td></tr><p>
 
 GROUPE HASSON & Frère<p>
 
@@ -7732,7 +7179,7 @@ Le Groupe Hasson & Frère a plus de 75 ans de présence active en RDC et est la 
 
 
 
-<td width="5%"><img src="images/kinmartlogo_2012.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/kinmartlogo_2012.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
 
 
 Supermarché KIN - MART
@@ -7751,7 +7198,7 @@ Contact : ADG - Tél. : 0819990999<p>
 - Aliments animaux domestiques.<p>
 <tr>
 
-<td width="5%"><img src="images/kin_marche_2013.jpg" alt="" width="278" height="306" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/kin_marche_2013.jpg" alt="" width="278" height="306" border="0" /></td></br><br /><p>
 
 
 KIN MARCHE
@@ -7774,7 +7221,7 @@ Tél : (+243)852233333 - 818888101 - storeops.kinmarche@yahoo.com<p>
 
 <tr>
 
-<td width="5%"><img src="images/pelou01.jpg" alt="" width="278" height="106" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/pelou01.jpg" alt="" width="278" height="106" border="0" /></td></br><br /><p>
 
 PELOUSTORE<p>
 ADRESSE : Boulevard du 30 juin 36 - Kinshasa Gombe<p>
@@ -7889,7 +7336,7 @@ Ouvert 7 jours/7 de 08h à 22h.<p>
     <tr>
 
 
-<td width="5%"><img src="images/amt_technology_2014_01.jpg" alt="" width="248" height="296" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/amt_technology_2014_01.jpg" alt="" width="248" height="296" border="0" /></td></br><br /><p>
 
 AMT - AMERICAN MANUFACTURING & TRADING
 Technology Market<p>
@@ -7935,7 +7382,7 @@ www.amt-tek.com - Facebook: AMT-Tek - Youtube: TheAMTTek
     <tr>
 
 
-<td width="5%"><img src="images/afrinet_header2006.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/afrinet_header2006.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
 
 AFRINET<p>
 
@@ -7960,7 +7407,7 @@ Visitez notre site web : www.afrinet.cd
 
 
 
-<td width="5%"><img src="images/cybernet01_2012.jpg" alt="" width="278" height="156" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/cybernet01_2012.jpg" alt="" width="278" height="156" border="0" /></td></br><br /><p>
 CYBERNET<p>
 
 Kinshasa <p>
@@ -7990,7 +7437,7 @@ Site web : www.cybernet.cd
 <tr>
 
 
-<td width="5%"><img src="images/gbs_2008.jpg" alt="" width="278" height="196" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/gbs_2008.jpg" alt="" width="278" height="196" border="0" /></td></br><br /><p>
 ANGOLA – BOTSWANA – BURUNDI – CONGO – MAURITANIE – RDC – TOGO<p>
 
 GBS - GLOBAL BROADBAND SOLUTION<p>
@@ -8015,7 +7462,7 @@ Visitez nos sites web : www.gb-solution.com et www.gbs.cd <p>
 <tr>
 
 
-<td width="5%"><img src="images/microcom01_2010.jpg" alt="" width="258" height="326" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/microcom01_2010.jpg" alt="" width="258" height="326" border="0" /></td></br><br /><p>
 
 
 Kinshasa : microcom@microcom.cd - (+243)999980838<p>
@@ -8038,7 +7485,7 @@ Mbuji Mayi : microcom@muanetu.cd - (+243)998165665<p>
 
 <tr>
 
-<td width="5%"><img src="images/wingo_2013_01.jpg" alt="" width="258" height="326" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/wingo_2013_01.jpg" alt="" width="258" height="326" border="0" /></td></br><br /><p>
 
 
 WINGO - Kinshasa - République Démocratique du Congo
@@ -8071,7 +7518,7 @@ Site web : www.wingo.net
     <tr>
 
 
-<td width="5%"><img src="images/allpackindustries02_2012.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/allpackindustries02_2012.jpg" alt="" width="278" height="86" border="0" /></td></br><br /><p>
 
  All pack industries met à votre disposition des cartons pour l'emballage de vos produits ainsi que des plateaux d'oeufs.
 
@@ -8094,7 +7541,7 @@ Email : kamali1@yahoo.com<p>
 
 
 
-<td width="5%"><img src="images/logo_samkha.gif" alt="" width="278" height="86" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/logo_samkha.gif" alt="" width="278" height="86" border="0" /></td></br><br /><p>
 
 
 SAMKHA<p>
@@ -8152,7 +7599,7 @@ Fournisseurs de cahiers pour écoliers avec couvertures personnalisées.
     <tr>
 
 
-<td width="5%"><img src="images/amt_technology_2014_01.jpg" alt="" width="248" height="296" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/amt_technology_2014_01.jpg" alt="" width="248" height="296" border="0" /></td></br><br /><p>
 
 AMT - AMERICAN MANUFACTURING & TRADING
 Technology Market<p>
@@ -8175,7 +7622,7 @@ www.amt-tek.com - Facebook: AMT-Tek - Youtube: TheAMTTek
 <tr>
 
 
-<td width="5%"><img src="images/dynaprint01_2011.jpg" alt="" width="280" height="296" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dynaprint01_2011.jpg" alt="" width="280" height="296" border="0" /></td></br><br /><p>
 
 
 
@@ -8186,7 +7633,7 @@ www.amt-tek.com - Facebook: AMT-Tek - Youtube: TheAMTTek
 
 
 <tr>
-<td width="5%"><img src="images/it_com01_2010.jpg" alt="" width="280" height="196" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/it_com01_2010.jpg" alt="" width="280" height="196" border="0" /></td></br><br /><p>
 IT - COM<p>
 Siège : Avenue Plateau 280, Kinshasa/Gombe (en face de l'armée du salut)
 Boulevard du 30 juin Kinshasa/Gombe (à côté de standard télécom, complexe Mwanateba)<p>
@@ -8201,7 +7648,7 @@ Vente de produits informatique et de téléphonie : Lap-top, imprimantes, cartou
 <tr>
 
 
-<td width="5%"><img src="images/microconcept.gif" alt="" width="280" height="96" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/microconcept.gif" alt="" width="280" height="96" border="0" /></td></br><br /><p>
 
 
 ADRESSE :106 Avenue de la MONGALA Kinshasa / Gombe<p>
@@ -8226,7 +7673,7 @@ Vente matériels informatiques avec garantie
 <tr>
 
 
-<td width="5%"><img src="images/radiocom01_2010.jpg" alt="" width="260" height="356" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/radiocom01_2010.jpg" alt="" width="260" height="356" border="0" /></td></br><br /><p>
 
 
 KINSHASA : Avenue Luambo Makiadi
@@ -8264,7 +7711,7 @@ Email : info@radiocomdrc.com<p>
     <tr>
 
 <tr>
-<td width="5%"><img src="images/cak_logo.gif" alt="" width="248" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/cak_logo.gif" alt="" width="248" height="206" border="0" /></td></br><br /><p>
 
 
 CAK
@@ -8285,7 +7732,7 @@ Papeterie (fournitures de bureau)<p>
 <tr>
 
 
-<td width="5%"><img src="images/dynaprint01_2011.jpg" alt="" width="280" height="296" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dynaprint01_2011.jpg" alt="" width="280" height="296" border="0" /></td></br><br /><p>
 
 
 
@@ -8317,7 +7764,7 @@ Papeterie (fournitures de bureau)<p>
     <tr>
 
 <tr>
-<td width="5%"><img src="images/africell_logo.jpg" alt="" width="198" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/africell_logo.jpg" alt="" width="198" height="206" border="0" /></td></br><br /><p>
 http://www.africell.cd<p>
 
 http://www.facebook.com/AfricellCongo/<p>
@@ -8332,7 +7779,7 @@ http://www.facebook.com/AfricellCongo/<p>
 <tr>
 
 
-<td width="5%"><img src="images/airtel_logo.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/airtel_logo.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
 
 www.airtel.com<p>
 
@@ -8344,7 +7791,7 @@ www.airtel.com<p>
 <tr>
 
 
-<td width="5%"><img src="images/radiocom01_2010.jpg" alt="" width="260" height="356" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/radiocom01_2010.jpg" alt="" width="260" height="356" border="0" /></td></br><br /><p>
 
 
 KINSHASA : Avenue Luambo Makiadi
@@ -8370,7 +7817,7 @@ Email : info@radiocomdrc.com<p>
 <tr>
 
 
-<td width="5%"><img src="images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/jumbo_lux_2013-1.jpg" alt="" width="288" height="206" border="0" /></td></br><br /><p>
 
 
 - Produits electro-ménagers : téléviseurs, climatiseurs, splits, cuisinières, machines à laver, réfrigérateurs, congélateurs, micro-ondes, Home cinema, lecteurs DVD et les petits électroménagers pour la cuisine (presse oranges, grille pain, etc.)<p>
@@ -8405,7 +7852,7 @@ Site Web : www.jumbo-lux.com - Facebook : Jumbo Lux<p>
 
 
 
-<td width="5%"><img src="images/logo_tigo2010.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/logo_tigo2010.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
 
 
 
@@ -8421,7 +7868,7 @@ www.tigo.cd<p>
 
 
 
-<td width="5%"><img src="images/logo_vodacom2010.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/logo_vodacom2010.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
 
 www.vodacom.cd<p>
 
@@ -8438,7 +7885,7 @@ www.vodacom.cd<p>
 
 
 
-<td width="5%"><img src="images/logo-orange.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/logo-orange.gif" alt="" width="208" height="206" border="0" /></td></br><br /><p>
 
 www.orange-rdc.com<p>
 
@@ -8526,7 +7973,7 @@ http://www.facebook.com/orange.rdc<p>
 
 
 
-<td width="5%"><img src="images/ask01.jpg" alt="" width="230" height="276" border="0" /></td></br><br /><p>A.S.K. Amicale Sportive Kinoise<p>
+<td width="5%"><img src="http://www.yakaotala.com/images/ask01.jpg" alt="" width="230" height="276" border="0" /></td></br><br /><p>A.S.K. Amicale Sportive Kinoise<p>
 
 Adresse : Avenue de la paix 1 - Ma Campagne - Joli Parc - Kinshasa Ngaliema<p>
 Contacts : Raphaël et Gabriel
@@ -8546,7 +7993,7 @@ Restaurant, bar, piscine semi-olympique, salles de sport et de fitness, terrain 
 <tr>
 
 
-<td width="5%"><img src="images/ccbl01.jpg" alt="" width="230" height="246" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/ccbl01.jpg" alt="" width="230" height="246" border="0" /></td></br><br /><p>
 
 
 CERCLE DE LA COMMUNAUTE BELGE DE LUBUMBASHI
@@ -8572,7 +8019,7 @@ Activités : Cercle de la communauté belge, européenne et francophone de Lubum
 
 
 
-<td width="5%"><img src="images/elaeis_piscine.jpg" alt="" width="230" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/elaeis_piscine.jpg" alt="" width="230" height="206" border="0" /></td></br><br /><p>
 
 ACTIVITES SPORTIVES :<p> Natation, Aquagym, 1 Terrain de Basket et de Volley, 4 Courts de Tennis, 2 Salles de Squash, Tennis de Table, salle de musculation.<p>
 POUR LES ENFANTS : Jeux de Société, Activités de Vacances, Baby-foot. Cours de Karaté, tennis, natation, Roller, Taekwando.<p>
@@ -8617,7 +8064,7 @@ TEL. : (+243)818845165 - EMAIL : elaeis@micronet.cd <p>
 
 
 
-<td width="5%"><img src="images/dabien_2014_01.jpg" alt="" width="270" height="206" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/dabien_2014_01.jpg" alt="" width="270" height="206" border="0" /></td></br><br /><p>
 
 
 
@@ -8632,7 +8079,7 @@ Fabrication de mèches pour coiffures afro. Importation et distribution de produ
 <tr>
 
 
-<td width="5%"><img src="images/david_intercoiffure2013_1.jpg" alt="" width="206" height="206" border="0" /></td></br><br /><p>DAVID INTER-COIFFURE<p>
+<td width="5%"><img src="http://www.yakaotala.com/images/david_intercoiffure2013_1.jpg" alt="" width="206" height="206" border="0" /></td></br><br /><p>DAVID INTER-COIFFURE<p>
 
 Coiffure - Esthétique - Massage - Sauna - Spa - Soins bien-être - Parfumerie - Bijouterie<p>
 
@@ -8655,7 +8102,7 @@ Avenue Tombalbaye 01 - Kinshasa Gombe<p>
 
 <tr>
 
-<td width="5%"><img src="images/steve_salon01_2011.jpg" alt="" width="206" height="306" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/steve_salon01_2011.jpg" alt="" width="206" height="306" border="0" /></td></br><br /><p>
 SALON STEVE<p>
 Galerie de la Bourse, Rond Point Forescom, 
 Kinshasa Gombe<p>
@@ -8794,7 +8241,7 @@ Coiffure Homme et Femme, coloration, coiffure mariage, tissage. Esthétique, man
     
     <tr>
 
-<td width="5%"><img src="images/electrocool_scan_01.gif" alt="" width="320" height="76" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/electrocool_scan_01.gif" alt="" width="320" height="76" border="0" /></td></br><br /><p>
 
 ELECTRO COOL<p>
 
@@ -8824,7 +8271,7 @@ Fondée en 1981, 29 ans d'expérience <p>
 
 <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td><p>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td><p>
      GROUPE CHANIC METAL<p>
      
 ACTIVITES<p>
@@ -8894,7 +8341,7 @@ Tél 081.71.52.763<p>
     
     <tr>
 
-<td width="5%"><img src="images/alphatopo_logo01.gif" alt="" width="280" height="88" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/alphatopo_logo01.gif" alt="" width="280" height="88" border="0" /></td></br><br /><p>
 
 
 ALPHA TOPO RDC<p>
@@ -8914,7 +8361,7 @@ Email : info@alpha-topo.com<p>
 <tr>
 
 
-<td width="5%"><img src="images/leica_header.gif" alt="" width="280" height="107" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/leica_header.gif" alt="" width="280" height="107" border="0" /></td></br><br /><p>
 
 www.alpha-topo.com- www.leica-geosystems.com - www.tensen-huon.be<p>
 
@@ -8925,7 +8372,7 @@ www.alpha-topo.com- www.leica-geosystems.com - www.tensen-huon.be<p>
 
 
 
-<td width="5%"><img src="images/froidcoeur_logo01.gif" alt="" width="290" height="77" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/froidcoeur_logo01.gif" alt="" width="290" height="77" border="0" /></td></br><br /><p>
 BUREAU D'ETUDES FROIDCOEUR<p>
 CONTACT :<p>
 Ingénieur civil des constructions : Joseph Froidcoeur
@@ -8972,7 +8419,7 @@ Etudes de stabilité générale. - Calculs d'ossatures en béton armé. - Calcul
 	<div data-role="content">
     
     
-<td width="5%"><img src="images/logo1.jpg" alt="" width="310" height="85" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/logo1.jpg" alt="" width="310" height="85" border="0" /></td></br><br /><p>
 
 ADRESSE : 5, Avenue de l'école, Kinshasa - Ngaliema<p>
 TEL.  : (+243) 815133005 - 998241403 <p>
@@ -8998,7 +8445,7 @@ Moellons et blocs de grès de toutes dimensions.<p>
 <tr>
 
 
-<td width="5%"><img src="images/congoroche_logo.gif" alt="" width="150" height="85" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/congoroche_logo.gif" alt="" width="150" height="85" border="0" /></td></br><br /><p>
 
 
 CONGO ROCHE SPRL<p>
@@ -9021,7 +8468,7 @@ Site d'exploitation : Route Kasumbalesa, Km 29 à Baya.<p>
 
 <tr>
 
-<td width="5%"><img src="images/egmf01.gif" alt="" width="300" height="135" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/egmf01.gif" alt="" width="300" height="135" border="0" /></td></br><br /><p>
 
 
 ENTREPRISE GENERALE MALTA FORREST<p>
@@ -9056,7 +8503,7 @@ Visitez notre site web : www.egmforrest.com
 <tr>
 
 
-<td width="5%"><img src="images/promines_01.jpg" alt="" width="300" height="155" border="0" /></td></br><br /><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/promines_01.jpg" alt="" width="300" height="155" border="0" /></td></br><br /><p>
 
 PROMINES s.p.r.l.<p>
 
@@ -9072,7 +8519,7 @@ Représentations commerciales et industielles - agent de : Ponts Bailey, Fournit
 
  <tr>
     
-    <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td><p>
+    <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td><p>
     
 SAFRICAS<p>
 
@@ -9171,7 +8618,7 @@ Visitez notre site Web : www.safricas.com
 	<div data-role="content">
 
 
-  <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="298" height="195" border="0" /></td></br><br /><p>
+  <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="298" height="195" border="0" /></td></br><br /><p>
                 
                 
 
@@ -9188,7 +8635,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
             <tr>    
                 
                 
-        <td width="5%"><img src="images/general_construct_2013.jpg" alt="" width="135" height="205" border="0" /></td></br><br /><p>        
+        <td width="5%"><img src="http://www.yakaotala.com/images/general_construct_2013.jpg" alt="" width="135" height="205" border="0" /></td></br><br /><p>        
                 
                 Construction générale.<p> 
 - Etudes de projets architecturaux et urbanistiques.<p> 
@@ -9214,7 +8661,7 @@ Site web : www.generalconstruct.net
              
              
              
-             <td width="5%"><img src="images/logo_afritec.gif" alt="" width="285" height="125" border="0" /></td></br><p>
+             <td width="5%"><img src="http://www.yakaotala.com/images/logo_afritec.gif" alt="" width="285" height="125" border="0" /></td></br><p>
              
              
 ADRESSE : Avenue des Poids-Lourds, n° 4, Kingabwa
@@ -9260,7 +8707,7 @@ MARINER, SERVICE APRES VENTE ET PIECES DE RECHANGE QUICKSILVER.<p>
        
        
        
-       <td width="5%"><img src="images/new_imotec_2010.jpg" alt="" width="125" height="185" border="0" /></td></br><p><
+       <td width="5%"><img src="http://www.yakaotala.com/images/new_imotec_2010.jpg" alt="" width="125" height="185" border="0" /></td></br><p><
               
               NEW IMOTEC<p>
 
@@ -9279,7 +8726,7 @@ Email : newimotec@hotmail.com<p>
                 <tr>
                 
                 
-                  <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td>
+                  <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td>
                 
                 SAFRICAS<p>
 
@@ -9354,7 +8801,7 @@ Visitez notre site Web : www.safricas.com
                 
                 
                 
-       <td width="5%"><img src="images/ technibat_logo_2011.gif" alt="" width="319" height="85" border="0" /></td>
+       <td width="5%"><img src="http://www.yakaotala.com/images/technibat_logo_2011.gif" alt="" width="319" height="85" border="0" /></td>
        
        TECHNIBAT SPRL
 Adresse : avenue Lubefu 42, Kinshasa Gombe<p>
@@ -9373,7 +8820,7 @@ Activités :<p> construction générale, rénovation de bâtiments, maintenance 
                 
                 <tr>
                 
-                <td width="5%"><img src="images/trageaf_01.jpg" alt="" width="329" height="88" border="0" /></td>
+                <td width="5%"><img src="http://www.yakaotala.com/images/trageaf_01.jpg" alt="" width="329" height="88" border="0" /></td>
                 RAGEAF
 
 Adresse: 1ère rue 5773, entrée Dilandos - Q/ industriel- Kinshasa Limete<p>
@@ -9437,7 +8884,7 @@ REALISATIONS :<p>
 
 <tr>
             
-            <td width="5%"><img src="images/bemeco_2010.jpg" alt="" width="329" height="258" border="0" /></td>
+            <td width="5%"><img src="http://www.yakaotala.com/images/bemeco_2010.jpg" alt="" width="329" height="258" border="0" /></td>
             
             
             ACTIVITES  BE.ME.CO.<p>
@@ -9463,7 +8910,7 @@ Site web : www.bemecordc.com<p>
             
             
             
-            <td width="5%"><img src="images/benco_logo1.gif" alt="" width="329" height="258" border="0" /></td>
+            <td width="5%"><img src="http://www.yakaotala.com/images/benco_logo1.gif" alt="" width="329" height="258" border="0" /></td>
             
             BENCO - BUILDING ENTREPRISE CONGO<p>
 
@@ -9495,7 +8942,7 @@ Construction générale et constructions métalliques.<p>
             
             <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br /><p>
 ACTIVITES<p>
  
@@ -9542,7 +8989,7 @@ Tél 081.71.52.763</br><br /> <br />
     
      <tr>
  
- <td width="5%"><img src="images/congometal_logo.gif" alt="" width="198" height="236" border="0" /></td></br><br /> <br />
+ <td width="5%"><img src="http://www.yakaotala.com/images/congometal_logo.gif" alt="" width="198" height="236" border="0" /></td></br><br /> <br />
  
  
 OUTES CONSTRUCTIONS METALLIQUES<p>
@@ -9573,7 +9020,7 @@ Usine de construction mécanique : fabrication de pièces mécaniques à la tour
    
    
    
-   <td width="5%"><img src="images/dematco2009.gif" alt="" width="300" height="76" border="0" /></td></br><br /> <br />
+   <td width="5%"><img src="http://www.yakaotala.com/images/dematco2009.gif" alt="" width="300" height="76" border="0" /></td></br><br /> <br />
    
    DEMATCO sprl<p>
 
@@ -9604,7 +9051,7 @@ ACTIVITES :<p>
            
             <tr>
 
-<td width="5%"><img src="images/katco_logo01.gif" alt="" width="310" height="106" border="0" /></td></br><br /> <p>
+<td width="5%"><img src="http://www.yakaotala.com/images/katco_logo01.gif" alt="" width="310" height="106" border="0" /></td></br><br /> <p>
 
 
 KATCO - KATUMBI CONSTRUCTIONS<p>
@@ -9650,7 +9097,7 @@ Activités : Fabrications et constructions métalliques. Charpentes, Montage, b�
 
   <tr>
                 
-                <td width="5%"><img src="images/abc_thd_logo01.gif" alt="" width="306" height="76" border="0" /></td></br><br /> <p>
+                <td width="5%"><img src="http://www.yakaotala.com/images/abc_thd_logo01.gif" alt="" width="306" height="76" border="0" /></td></br><br /> <p>
                 ABC - NRC KIN 54390<p>
 TEL. : (+243)999915447 - SITE WEB : www.thdcongo.com
 ACTIVITES :<p>
@@ -9665,7 +9112,7 @@ Distribution d'équipements électrotechniques. <p>
               
       </tr>
                 
-                    <td width="5%"><img src="images/abc_thd_logo01.gif" alt="" width="206" height="126" border="0" /></td></br><br /> <p>
+                    <td width="5%"><img src="http://www.yakaotala.com/images/abc_thd_logo01.gif" alt="" width="206" height="126" border="0" /></td></br><br /> <p>
                 
                 CEGELEC<p>
 ADRESSE : Avenue Général BOBOZO 228 - Kinshasa / Gombe<p>
@@ -9680,7 +9127,7 @@ Mussa HEMEDI - CEGELEC Representative - Tél.: 0818149533 - mussa.hemedi@cegelec
  <tr>
  
  
-  <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="204" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="204" height="206" border="0" /></td></br><br /> <br />
   
 ENTHALPY sprl</br><br /> <br />
 Adresse : Avenue Malemba - Nkulu 10 - Kinshasa Gombe</br><br /> <br />
@@ -9739,7 +9186,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
 	<div data-role="content">
 
 
-<td width="5%"><img src="images/nbli_logo.gif" alt="" width="154" height="114" border="0" /></td></br><br /> <br />
+<td width="5%"><img src="http://www.yakaotala.com/images/nbli_logo.gif" alt="" width="154" height="114" border="0" /></td></br><br /> <br />
   
   New Baron & Levêque Afrique (NBLA)<p>
 ADRESSE : Avenue Kibati 20 - Quartier Industriel - Lubumbashi<p>
@@ -9786,7 +9233,7 @@ Rénovation du stade de la Kenya à Lubumbashi<p>
 
 <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -9821,7 +9268,7 @@ Site web : www.biaoverseas.com
      
      <tr>       
      
-     <td width="5%"><img src="images/bricocenter_2012.jpg" alt="" width="248" height="306" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bricocenter_2012.jpg" alt="" width="248" height="306" border="0" /></td>
      
      BRICO-CENTER<p>
 Avenue du Commerce 43, (à côté de la clinique CMK) Kinshasa Gombe<p>
@@ -9835,7 +9282,7 @@ E-mail : info@brico-center.com - Site web : www.brico-center.com
     
     <tr>     
            
-           <td width="5%"><img src="images/bsi_steel_2013_1.jpg" alt="" width="201" height="333" border="0" /></td>
+           <td width="5%"><img src="http://www.yakaotala.com/images/bsi_steel_2013_1.jpg" alt="" width="201" height="333" border="0" /></td>
            
            
            BSI STEEL LUBUMBASHI<p>
@@ -9866,7 +9313,7 @@ Site web : www.bsisteel.com<p>
            
     <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <p>
 ACTIVITES
  
@@ -9940,7 +9387,7 @@ Tél 081.71.52.763</br><br /> <br />
 	<div data-role="content">
 
 
-                 <td width="5%"><img src="images/sogeric_logo.gif" alt="" width="288" height="100" border="0" /></td>
+                 <td width="5%"><img src="http://www.yakaotala.com/images/sogeric_logo.gif" alt="" width="288" height="100" border="0" /></td>
    SOGERIC sprl</br><br /> <p>
                 
                 ADRESSE : Avenue du Marché, n°3 - Kinshasa / Gombe<p>
@@ -9986,7 +9433,7 @@ ACTIVITES :<p> Importateur - distributeur des matériaux d'étanchéité DERBIGU
 
  <tr>
              
-             <td width="5%"><img src="images/ael_01header.jpg" alt="" width="288" height="100" border="0" /></td>
+             <td width="5%"><img src="http://www.yakaotala.com/images/ael_01header.jpg" alt="" width="288" height="100" border="0" /></td>
              AEL - AFRICAN EXPLOSIVES LIMITED<p>
 Adresse : rue du golf 1424 - Lubumbashi <p>- Tél. +243 997027878 <p>
 Email : andre.bester@aelrdc.com <p>
@@ -10036,7 +9483,7 @@ Fournisseur d'explosifs commerciaux destinés aux mines et carrières. Emulsions
    <tr>
                 
                 
-                 <td width="5%"><img src="images/atco_logo.gif" alt="" width="150" height="170" border="0" /></td>
+                 <td width="5%"><img src="http://www.yakaotala.com/images/atco_logo.gif" alt="" width="150" height="170" border="0" /></td>
                 
                 
                 A.T.CO (American Trading Company)
@@ -10068,7 +9515,7 @@ ACTIVITES<p>
                 
                 
                 
-                <td width="5%"><img src="images/logo_sharim.gif" alt="" width="200" height="170" border="0" /></td>
+                <td width="5%"><img src="http://www.yakaotala.com/images/logo_sharim.gif" alt="" width="200" height="170" border="0" /></td>
                 
                 ADRESSE : Avenue Kwango n° 8A - Kinshasa/Gombe.<p>
 TEL. : (+243) 85 180 7212 - 81 98 22 544 - 999945049<p>
@@ -10080,7 +9527,7 @@ ACTIVITES :<p> Fabrication de peinture pour le bâtiment, intérieur & extérieu
                 
                 <tr>
                 
-                 <td width="5%"><img src="images/congo_paint06_2013.jpg" alt="" width="200" height="190" border="0" /></td>
+                 <td width="5%"><img src="http://www.yakaotala.com/images/congo_paint06_2013.jpg" alt="" width="200" height="190" border="0" /></td>
                 
               CONGO PAINT<p>
 Adresse : Avenue J. Kabasele (ex Flambeau) Kinshasa Gombe<p>
@@ -10096,7 +9543,7 @@ Site web : www.congo-paint.com  <p>
                 <tr>
 
 
-  <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="258" height="206" border="0" /></td></br><br /> <br />
   
 ENTHALPY sprl<p>
 Adresse : Avenue Malemba - Nkulu 10 - Kinshasa Gombe<p>
@@ -10116,7 +9563,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
 <tr>
 
 
-<td width="5%"><img src="images/inforever01_2012.jpg" alt="" width="98" height="276" border="0" /></td><p>
+<td width="5%"><img src="http://www.yakaotala.com/images/inforever01_2012.jpg" alt="" width="98" height="276" border="0" /></td><p>
 
 IN FOREVER<p>
 Adresse : Croisement des avenues Kabasele
@@ -10163,7 +9610,7 @@ Les peinture de qualité pouvant répondre aux exigences les plus pointues notam
 
 
 
-                <td width="5%"><img src="images/drilltek_logo1.gif" alt="" width="266" height="100" border="0" /></td><p>
+                <td width="5%"><img src="http://www.yakaotala.com/images/drilltek_logo1.gif" alt="" width="266" height="100" border="0" /></td><p>
                 
                 
                 
@@ -10183,7 +9630,7 @@ Drilltek propose des solutions pour tous les travaux de forage minier. La sécur
 
 
 
-  <td width="5%"><img src="images/soforco_2013.jpg" alt="" width="140" height="350" border="0" /></td><p>
+  <td width="5%"><img src="http://www.yakaotala.com/images/soforco_2013.jpg" alt="" width="140" height="350" border="0" /></td><p>
  
 
 SOFOCO sprl<p>
@@ -10239,7 +9686,7 @@ Site web : www.sofoco.com
 
 
 
-  <td width="5%"><img src="images/dematco2009.gif" alt="" width="270" height="210" border="0" /></td><p>
+  <td width="5%"><img src="http://www.yakaotala.com/images/dematco2009.gif" alt="" width="270" height="210" border="0" /></td><p>
          
                       DEMATCO sprl<p>
 
@@ -10272,7 +9719,7 @@ ACTIVITES :<p>
                       
                  <tr>     
                       
-                      <td width="5%"><img src="images/egmf01.gif" alt="" width="350" height="120" border="0" /></td><p>
+                      <td width="5%"><img src="http://www.yakaotala.com/images/egmf01.gif" alt="" width="350" height="120" border="0" /></td><p>
                       
                       ENTREPRISE GENERALE MALTA FORREST<p>
 ADRESSE : Avenue Kigoma 22 - B.P. 1531 - Lubumbashi - Province du Katanga<p>
@@ -10306,7 +9753,7 @@ Visitez notre site web : www.egmforrest.com<p>
                      <tr> 
                      
                      
-                     <td width="5%"><img src="images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
+                     <td width="5%"><img src="http://www.yakaotala.com/images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
     M.W. AFRITEC SPRL</br><br /> <br />
      
      
@@ -10354,7 +9801,7 @@ MARINER, SERVICE APRES VENTE ET PIECES DE RECHANGE QUICKSILVER.<p>
                       <tr>
                       
                       
-                      <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td><p>
+                      <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td><p>
     
 SAFRICAS<p>
 
@@ -10446,7 +9893,7 @@ Visitez notre site Web : www.safricas.com<p>
 	<div data-role="content">
 
 
-  <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+  <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -10478,7 +9925,7 @@ Site web : www.biaoverseas.com
        
        <tr>
        
-       <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td><p>
+       <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td><p>
   
 ENTHALPY sprl<p>
 Adresse : Avenue Malemba - Nkulu 10 - Kinshasa Gombe<p>
@@ -10497,7 +9944,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
   <tr>
     
     
-       <td width="5%"><img src="images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
+       <td width="5%"><img src="http://www.yakaotala.com/images/logo_afritec.gif" alt="" width="288" height="120" border="0" /></td>
     M.W. AFRITEC SPRL</br><br /> <br />
      
      
@@ -10548,7 +9995,7 @@ MARINER, SERVICE APRES VENTE ET PIECES DE RECHANGE QUICKSILVER.<p>
              
       <tr>
     
-    <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
     
 SAFRICAS
 
@@ -10647,7 +10094,7 @@ Visitez notre site Web : www.safricas.com
    
       <tr>
     
-    <td width="5%"><img src="images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
+    <td width="5%"><img src="http://www.yakaotala.com/images/safricas2011.jpg" alt="" width="219" height="234" border="0" /></td></br><br /> <br />
     
 SAFRICAS
 
@@ -10762,7 +10209,7 @@ Visitez notre site Web : www.safricas.com
 
 
 
-                 <td width="5%"><img src="images/ips2009.jpg" alt="" width="189" height="394" border="0" /></td></br><br /> <br />
+                 <td width="5%"><img src="http://www.yakaotala.com/images/ips2009.jpg" alt="" width="189" height="394" border="0" /></td></br><br /> <br />
     
                  TREFILKIN<p>
 Adresse : 11ème rue
@@ -10840,7 +10287,7 @@ Activités : fourniture de fûts métalliques de 216 litres pour hydrocarbures c
 
 
 
-   <td width="5%"><img src="images/cores_2013_1.jpg" alt="" width="394" height="194" border="0" /></td></br><br /> <br />
+   <td width="5%"><img src="http://www.yakaotala.com/images/cores_2013_1.jpg" alt="" width="394" height="194" border="0" /></td></br><br /> <br />
 
 Vous êtes propriétaire à Kinshasa?<p>
 • Vous disposez d’un ou plusieurs logements destinés à la location et vous voulez être certain de pouvoir compter sur un revenu locatif régulier et optimisé ?
@@ -10908,7 +10355,7 @@ Site internet : www.cores.cd<p>
 	<div data-role="content">
 
 
- <td width="5%"><img src="images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
      
      PRODUITS :
 - Consommables automobiles AMC, Donaldson et NGK</br><br /> 
@@ -10947,7 +10394,7 @@ Comptabilité :
 <tr>
 
  
-                 <td width="5%"><img src="images/ips2009.jpg" alt="" width="189" height="394" border="0" /></td></br><br /> <br />
+                 <td width="5%"><img src="http://www.yakaotala.com/images/ips2009.jpg" alt="" width="189" height="394" border="0" /></td></br><br /> <br />
     
                  TREFILKIN<p>
 Adresse : 11ème rue
@@ -10987,7 +10434,7 @@ Activités : fourniture de fûts métalliques de 216 litres pour hydrocarbures c
 </tr>
 
 <tr>
- <td width="5%"><img src="images/sotradwater2011.jpg" alt="" width="180" height="400" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/sotradwater2011.jpg" alt="" width="180" height="400" border="0" /></td>
 
 SOTRAD WATER<p>
 Adresses :<p>
@@ -11028,7 +10475,7 @@ Site web : www.sotradwater.be
 
                    
 
- <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -11072,7 +10519,7 @@ Tél 081.71.52.763</br><br /> <br />
     </tr></br><br /> <br />
     <tr>
     
- <td width="5%"><img src="images/katco_logo01.gif" alt="" width="288" height="100" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/katco_logo01.gif" alt="" width="288" height="100" border="0" /></td>
  
  
  KATCO - KATUMBI CONSTRUCTIONS<p>
@@ -11086,7 +10533,7 @@ Activités :<p> Fabrications et constructions métalliques. Charpentes, Montage,
  </tr>
 
 <tr>
- <td width="5%"><img src="images/sotradwater2011.jpg" alt="" width="180" height="400" border="0" /></td>
+ <td width="5%"><img src="http://www.yakaotala.com/images/sotradwater2011.jpg" alt="" width="180" height="400" border="0" /></td>
 
 SOTRAD WATER<p>
 Adresses :<p>
@@ -11146,7 +10593,7 @@ Site web : www.sotradwater.be
 
 
 
-                    <p id='AppFramework_info'>Nous vous prions de visiter cette rubrique, pour plus d'information.</p>
+                    
 
 
 DEMATCO sprl
@@ -11339,7 +10786,7 @@ Piscine
 
 
 
-<td width="5%"><img src="images/egmf01.gif" alt="" width="380" height="140" border="0" /></td>
+<td width="5%"><img src="http://www.yakaotala.com/images/egmf01.gif" alt="" width="380" height="140" border="0" /></td>
 
 
 ENTREPRISE GENERALE MALTA FORREST<p>
@@ -11452,7 +10899,7 @@ Le CHANTIER est une entreprise spécialisée dans la vente et l'installation de 
 
 
 <tr>
-<td width="5%"><img src="images/schneiderlogo_2012.jpg" alt="" width="270" height="100" border="0" /></td>
+<td width="5%"><img src="http://www.yakaotala.com/images/schneiderlogo_2012.jpg" alt="" width="270" height="100" border="0" /></td>
 
 
 Schneider Electric en RDC<p>
@@ -11494,7 +10941,7 @@ Parce que l’installation électrique d’un bâtiment doit être appréhendée
 	<div data-role="content">
 
 
-     <td width="5%"><img src="images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/piesauto_2010.jpg" alt="" width="288" height="186" border="0" /></td>
      
      PRODUITS :
 - Consommables automobiles AMC, Donaldson et NGK</br><br /> 
@@ -11558,7 +11005,7 @@ Comptabilité :
 
  <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -11774,7 +11221,7 @@ Importation, transport, stockage, vente et livraison sur site de carburant Gasoi
 
      <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -11807,7 +11254,7 @@ Site web : www.biaoverseas.com
      
      <tr>
  
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -11884,7 +11331,7 @@ Tél 081.71.52.763</br><br /> <br />
        <tr>
  
  
-  <td width="5%"><img src="images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
+  <td width="5%"><img src="http://www.yakaotala.com/images/enthalpy_02_2010.gif" alt="" width="298" height="206" border="0" /></td></br><br /> <br />
   
 ENTHALPY sprl</br><br /> <br />
 Adresse : Avenue Malemba - Nkulu 10 - Kinshasa Gombe</br><br /> <br />
@@ -11901,7 +11348,7 @@ Activités : tous travaux du bâtiment : construction, rénovation, électricit�
  
  <tr>
     
-     <td width="5%"><img src="images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/chanic_2013_1.jpg" alt="" width="288" height="86" border="0" /></td>
      GROUPE CHANIC METAL</br><br /> <br />
 ACTIVITES
  
@@ -11985,7 +11432,7 @@ Tél 081.71.52.763</br><br /> <br />
 
          <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -12053,7 +11500,7 @@ Site web : www.biaoverseas.com
 
 <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -12121,7 +11568,7 @@ Site web : www.biaoverseas.com
 
            <tr>
     
-     <td width="5%"><img src="images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
+     <td width="5%"><img src="http://www.yakaotala.com/images/bia_2013_4.jpg" alt="" width="288" height="86" border="0" /></td>
      
      BIA Overseas est une entreprise familiale belge présente dans 18 pays africains (Mauritanie,Sénégal, Côte d’Ivoire, Guinée, Bourkina, Niger, RDC, Cameroun, Rwanda, Burundi). Nous distribuons les marques BOMAG, KOMATSU, SANDVIK, Cummins Power Generation, Cummins et YALE.</br><br /><br />
 
@@ -12491,7 +11938,7 @@ Bar, Boîte branchée, cadre chaleureux, discret ambiance assurée, Parking gard
     
                      
                  
-                 <td width="5%"><img src="images/chantilly_2014_02.jpg" alt="" width="190" height="400" border="0" /></td>
+                 <td width="5%"><img src="http://www.yakaotala.com/images/chantilly_2014_02.jpg" alt="" width="190" height="400" border="0" /></td>
                  
             LE CHANTILLY<p>
 
@@ -12538,6 +11985,30 @@ Installez-vous au salon pour découvrir notre carte de restauration et notre pla
 		<h1>Hôtels à Kinshasa</h1>
 	</div>
 	<div data-role="content">
+    
+    
+    
+    
+    Grand hôtel de Kinshasa<p>
+
+Hôtel cinq étoiles<p>
+Adresse : Gombe, Kinshasa
+Téléphone :0815 553 001
+Annonces Réserver une chambre<p>
+
+
+	
+    <p>
+    
+    
+    
+Fleuve Congo Hotel<p>
+
+
+Hôtel cinq étoiles<p>
+Adresse : 119 Boulevard Colonel Tshatshi, Kinshasa
+Téléphone :0825 000 300<p><p>
+    
     
           APOCALYPSE 22<p>
 Hôtel 3 étoiles avec restaurant classé "2 fourchettes"<p>
@@ -16815,3 +16286,5 @@ Site web: www.etec-rdc.org<p>
 
 </body>
 </html>
+
+
